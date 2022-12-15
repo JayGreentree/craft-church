@@ -1,0 +1,20 @@
+allowRepeatingEvents: true
+color: '#9E55F6'
+description: 'The default calendar'
+descriptionFieldHandle: null
+fieldLayout: null
+handle: default
+hasTitleField: true
+icsHash: null
+icsTimezone: floating
+locationFieldHandle: null
+name: Default
+siteSettings:
+  920962c0-d6e3-4007-922b-5019eddfd5b2:
+    enabledByDefault: true
+    hasUrls: null
+    siteId: 9a595275-36b0-484a-b00f-9b3b8a2c12e8 # Generic Church
+    template: null
+    uriFormat: null
+titleFormat: null
+titleLabel: Title

@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: defed97c-2791-4d77-a47a-85269267e5e5 # Globals
+handle: countdown
+instructions: ''
+name: countdown
+searchable: false
+settings:
+  allDay: false
+  endDate: null
+  endRepeat: null
+  endRepeatDate: null
+  months: null
+  repeatType: null
+  repeats: false
+  startDate: null
+translationKeyFormat: null
+translationMethod: none
+type: unionco\calendarize\fields\CalendarizeField

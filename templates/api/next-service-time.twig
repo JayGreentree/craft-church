@@ -1,0 +1,13 @@
+{% set currentEventId = craft.app.request.segment(3) %}
+{% for event in craft.calendar.events({id: 'not ' ~ currentEventId,rangeStart: 'today',rangeEnd: '1 month',limit: 1}) %}
+{"nextTime":"{{ event.startDate.format("g:ia l") }}",
+"nextDay":"{{ event.startDate.format("F d, Y") }}",
+"year":"{{ event.startDate.format("Y") }}",
+"month":"{{ event.startDate.format("m") }}",
+"day":"{{ event.startDate.format("d") }}",
+"start_hour":"{{ event.startDate.format("H") }}",
+"start_minute":"{{ event.startDate.format("i") }}",
+"end_day":"{{ event.endDate.format("w") }}",
+"end_hour":"{{ event.endDate.format("H") }}",
+"end_minute":"{{ event.endDate.format("i") }}"}
+{% endfor %}

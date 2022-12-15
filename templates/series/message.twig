@@ -1,0 +1,37 @@
+{% extends "_layout/_layout" %}
+
+
+{% block content %}
+
+	<div role="document">
+		<div class="content">
+			<main>
+			{% set image = entry.featureImage.one() %}
+				<div class="nr_page-header nr_page-header--has-image">
+					<div class="nr_page-header_image">
+						<div class="content" {% if image %}style="background-image: url('{{ image.getUrl }}')"{% endif %}>
+                        <br /><br /><br /><br />
+                            <h1 class="text-center">Messages in series</h1>
+                        </div>
+					</div>
+				</div>
+
+				<div class="container">
+					<!-- Example row of columns -->
+					<div class="row">
+						{% for entry in craft.entries.section('series').orderby('id').limit('12') %}
+							{% set image = entry.featureImage.one() %}
+							<div class="col-md-4">
+								{% if image %}
+									<img class="nr_card_image" src=" {{ image.getUrl }}">
+								{% endif %}
+								<h2>{{ entry.title }}</h2>
+								<p>{{ entry.seriesSummary }}</p>
+								<p>
+									<a class="btn btn-default" href="#" role="button">View Message &raquo;</a>
+								</p>
+							</div>
+						{% endfor %}
+
+					</div>
+				{% endblock %}

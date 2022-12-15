@@ -1,0 +1,26 @@
+<div class="nr_mosiac_flex-tile nr_mosiac_flex-tile--column nr_mosiac_flex-tile--horizontal-half">
+	<div class="nr_mosiac_flex-tile--vertical">
+		{% for entry in craft.entries.section('blog').orderby('id').limit('2') %}
+			{% set image = entry.featureImage.one() %}
+			<a class="nr_mosiac_flex-tile nr_mosiac_flex-tile--column nr_mosiac_flex-tile--horizontal-half nr_card" href="{{ entry.buttonUrl }}">
+				<div class="nr_card_image nr_card_image--flex-grow" style="background-image: url({{ image.getUrl }});"></div>
+				<div class="nr_card_link">
+					<span class="text-primary">{{ entry.title }}</span>
+					<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+				</div>
+			</a>
+		{% endfor %}
+	</div>
+	<div class="nr_mosiac_flex-tile--vertical">
+		{% for entry in craft.entries.section('events').orderby('id').limit('2') %}
+			{% set image = entry.featureImage.one() %}
+			<a class="nr_mosiac_flex-tile nr_mosiac_flex-tile--column nr_mosiac_flex-tile--horizontal-half nr_card" href="{{ entry.buttonUrl }}">
+				<div class="nr_card_image nr_card_image--flex-grow" {% if image %} style="background-image: url({{ image.getUrl }});" {% endif %}></div>
+				<div class="nr_card_link">
+					<span class="text-primary">{{ entry.title }}</span>
+					<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+				</div>
+			</a>
+			{% endfor %}
+		</div>
+</div>

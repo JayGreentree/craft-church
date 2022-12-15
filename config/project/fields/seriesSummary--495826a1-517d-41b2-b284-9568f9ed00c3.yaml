@@ -1,0 +1,19 @@
+columnSuffix: zywyioag
+contentColumnType: text
+fieldGroup: dc0a66c8-bf3d-48f0-bf56-5a9a1003fe77 # Series
+handle: seriesSummary
+instructions: ''
+name: 'Series Summary'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: '1'
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,9 @@
+baseUrl: null
+enabled: true
+handle: default
+hasUrls: false
+language: en-US
+name: 'Generic Church'
+primary: true
+siteGroup: 8bac3c22-b6fb-416a-bc27-21365d68d02b # Jaygreentree
+sortOrder: 1

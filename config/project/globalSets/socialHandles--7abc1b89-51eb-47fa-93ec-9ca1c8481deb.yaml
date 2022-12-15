@@ -1,0 +1,19 @@
+fieldLayouts:
+  f17069a6-381a-41e4-9655-bcb7b2a7428b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7f3e0b6d-485a-46ab-95db-89be18c35195 # Social Media
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Social Handles'
+        sortOrder: 1
+handle: socialHandles
+name: 'Social Handles'
+sortOrder: 2

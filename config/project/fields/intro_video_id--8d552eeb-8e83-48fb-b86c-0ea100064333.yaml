@@ -1,0 +1,19 @@
+columnSuffix: zxtsnhoh
+contentColumnType: text
+fieldGroup: 776ccb4a-3f14-4b2c-be86-82f7a20d4e77 # Promo
+handle: intro_video_id
+instructions: ''
+name: 'Intro Video ID'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

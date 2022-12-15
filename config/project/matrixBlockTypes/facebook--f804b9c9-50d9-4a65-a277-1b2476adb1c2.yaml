@@ -1,0 +1,37 @@
+field: 7f3e0b6d-485a-46ab-95db-89be18c35195 # Social Media
+fieldLayouts:
+  823363ce-09b0-4f06-8aaa-116891d8273f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: dadde2a4-9812-4835-9c10-4ddf3692bec9 # Facebook
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  dadde2a4-9812-4835-9c10-4ddf3692bec9: # Facebook
+    columnSuffix: fbyttuuj
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: facebook
+    instructions: ''
+    name: Facebook
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: facebook
+name: Facebook
+sortOrder: 1

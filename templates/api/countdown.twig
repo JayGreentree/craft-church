@@ -1,0 +1,9 @@
+{
+    "meta":{
+        "status":200},
+        "response":{
+            "item":{
+                "isLive":{% if craft.youtubelive.isLive() %}true {% else %}false{% endif %},
+                "eventStartTime":"{{ site.countdown|date('c') }}Z"
+                }
+}

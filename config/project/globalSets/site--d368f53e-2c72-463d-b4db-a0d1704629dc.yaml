@@ -1,0 +1,19 @@
+fieldLayouts:
+  fec24957-56e5-4eeb-9d84-4404ab5ff0e6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 236ad58c-2026-4079-be32-83ab61515def # countdown
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: countdown
+        sortOrder: 1
+handle: site
+name: Site
+sortOrder: 1

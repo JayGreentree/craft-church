@@ -1,0 +1,101 @@
+{% extends "_layout/_layout" %}
+
+{% set title = "Locations" %}
+
+{% block pagestyles %}
+	home page
+{% endblock %}
+
+{% block content %}
+
+
+	<div role="document">
+		<div class="content">
+			<main>
+
+				<div id="bid_6400" data-zone-location="Page" class="block-instance js-block-instance html-content">
+					<div class="block-content">
+						<div id="ctl00_main_ctl12_ctl01_ctl00_upnlHtmlContentView">
+
+							<div>
+								<h2 style="text-align: center;">JOIN US FOR SERVICE IN PERSON OR ONLINE!</h2>
+								<p style="text-align: center;">Tune in every Saturday and Sunday as we
+									<a href="/live/">stream services</a>
+									or visit us at one of our campuses listed below.</p>
+								<p style="text-align: center;">Missed a service? No problem, you can view them <a href="/series/">on demand</a> anytime
+								</p>
+							</div>
+
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div id="section-b-bg" class="col-md-12">
+						<div id="zone-sectionb" class="zone-instance">
+							<div class="zone-content">
+								<div id="bid_3847" data-zone-location="Page" class="block-instance js-block-instance html-content">
+									<div class="block-content">
+										<div id="ctl00_main_ctl14_ctl01_ctl00_upnlHtmlContentView">
+
+											<div class="campus-cards-row">
+												{% for entry in craft.entries.section('locations').orderby('title') %}
+													<!-- begin campus card -->
+													<div class="campus-card 8">
+														<div class="image">{% set image = entry.featureImage.one() %}
+															{% if image %}
+																<img src="{{ image.Url }}" alt="">
+															{% endif %}
+														</div>
+														<div class="card-content">
+															<div class="header">
+																<h4>{{ entry.title }}</h4>
+															</div>
+															<div class="content location-contact">
+																<div class="address">
+																	{{ entry.address|raw }}
+																</div>
+
+																{% if entry.phone %}
+																	{{ tag('a', {text: entry.phone, href: entry.phone}) }}
+																{% endif %}
+															</div>
+															<div class="content service-times mt-25">
+																<h5>SERVICE TIMES</h5>
+																{% for block in entry.serviceTimes %}
+																	{% switch block.type %}
+
+																		{% case "dayOfWeek" %}
+																			<span>
+																				<b>{{ block.dayOfWeek }}</b>
+																			</span>
+
+																		{% case "time" %}
+																			<ul class="list-inline">
+																				{% if block.time %}
+																					<li>{{ block.time }}</li>
+																				{% endif %}
+																			</ul>
+																		{% default %}
+																			...
+
+																	{% endswitch %}
+																{% endfor %}
+
+															</div>
+
+
+															<div class="link">
+																<a class="btn btn-primary" href="{{ entry.url }}">Learn More</a>
+															</div>
+														</div>
+													</div>
+												{% endfor %}
+											</div>
+
+										</main>
+									</div>
+								</div>
+							{% endblock %}

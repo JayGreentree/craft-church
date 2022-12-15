@@ -1,0 +1,37 @@
+field: 7f3e0b6d-485a-46ab-95db-89be18c35195 # Social Media
+fieldLayouts:
+  00b944e6-7fbe-4692-9fb2-a5019a814b3d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 50c179f4-bbec-4f02-8277-895593769759 # Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  50c179f4-bbec-4f02-8277-895593769759: # Email
+    columnSuffix: iqxdwuox
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: email
+    instructions: ''
+    name: Email
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - email
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: email
+name: Email
+sortOrder: 4

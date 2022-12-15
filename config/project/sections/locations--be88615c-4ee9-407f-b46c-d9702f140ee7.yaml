@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: locations
+name: Locations
+propagationMethod: all
+siteSettings:
+  9a595275-36b0-484a-b00f-9b3b8a2c12e8: # Generic Church
+    enabledByDefault: true
+    hasUrls: true
+    template: locations/_entry
+    uriFormat: 'locations/{slug}'
+type: channel

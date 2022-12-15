@@ -1,0 +1,72 @@
+a.nr_card:hover
+	box-shadow: 0 4px 8px rgba(0,0,0,0.25)
+	> .nr_card_image
+		filter: brightness(1.15)
+.nr_card
+	transition: box-shadow 250ms ease
+	display: block
+	background-color: #fff
+	color: $text-color
+	box-shadow: 0 2px 4px rgba(0,0,0,0.12)
+	@media screen and (max-width: $screen-sm)
+		margin-bottom: 20px
+
+	&--flex
+		@media screen and (min-width: $screen-sm)
+			display: flex
+
+	&--dark
+		color: #fff
+		background: rgba(0,0,0,0.5)
+
+	&--margin
+		margin-bottom: 20px
+
+	&--blank
+		border-radius: 8px
+		padding: 10px
+		background-color: transparent
+		box-shadow: none
+
+	&--video
+		background-size: 100% auto
+		background-position: center top
+		&_tray
+			background-color: #fff
+		> .nr_card_content
+			padding-top: 0
+			position: relative
+		&_badge > img
+			margin-top: -25px
+
+	&_image
+		overflow: hidden
+		transition: 250ms
+		background-size: cover
+		background-position: center center 
+		width: 100%
+		> .content
+			background-size: cover
+			background-position: center center 
+		&--1x1
+			+aspect-ratio(1.105,1)
+		&--flex-grow
+			@media screen and (max-width: $screen-sm)
+				+aspect-ratio(1.105,1)
+			@media screen and (min-width: $screen-sm)
+				flex: 1
+				background-size: cover
+				background-position: center center 
+		&--16x9
+			+aspect-ratio(16,9)
+
+	&_link
+		font-size: 18px
+		font-weight: 700
+		padding: 10px
+		color: $brand-primary
+
+	&_content
+		font-family: $font-family-serif
+		padding: 20px
+	

@@ -1,0 +1,41 @@
+field: bcd40e3f-1970-4a84-9e8f-31459b580ffd # Service Times
+fieldLayouts:
+  fe3ab152-d3f6-4e2f-9a52-0454342df83d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1368d3cc-7303-41de-bcdc-1a91b1c40b18 # Time
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1368d3cc-7303-41de-bcdc-1a91b1c40b18: # Time
+    columnSuffix: jjamvbvu
+    contentColumnType: text
+    fieldGroup: null
+    handle: time
+    instructions: ''
+    name: Time
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: time
+name: Time
+sortOrder: 2
