@@ -1,0 +1,19 @@
+columnSuffix: jdrazdjn
+contentColumnType: text
+fieldGroup: 0759b0d2-7a69-4b31-9864-246df819554b # Series
+handle: seriesImage
+instructions: null
+name: 'Series Image'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

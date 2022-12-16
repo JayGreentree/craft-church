@@ -1,123 +1,76 @@
-dateModified: 1670839142
+dateModified: 1671182072
 email:
   fromEmail: jgreentreevin@gmail.com
-  fromName: Jaygreentree
+  fromName: 'Craft Church Demo'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  featureImage:
+    hasUrls: true
+    name: 'Feature Image'
+    settings:
+      path: '@webroot/assets/images/feature'
+    type: craft\fs\Local
+    url: /assets/images/feature/
 meta:
   __names__:
-    0d576f94-0f2f-471b-b146-79c5303e76d3: Homepage # Homepage
-    0ffd4335-7c66-40a2-8341-cd2cb2c1740d: live # live
-    1aee728c-d68f-485f-ab5f-e75e6781131a: Message # Message
-    1b56a44e-6585-4c81-af58-d0df1d71433b: Time # Time
-    01fa0b11-0c49-46dc-be37-6163447eeb44: Message # Message
-    2a2a13f3-54e3-4975-a9f7-e97fd63f3e2a: Locations # Locations
-    3d8c23fb-1c53-4e67-8156-667af14a4c23: Bio # Bio
-    5b7d2621-ac0e-4ad4-be7c-8883ed6c6b6a: 'Related Pages' # Related Pages
-    5b27bd2d-c1bd-42b5-9482-62c3a0d16300: Email # Email
-    5ed5b999-17e5-4ddc-aef0-448f894787e2: Forms # Forms
-    5ee9f8f1-428b-4f7a-b426-8caf875fb7fa: Instagram # Instagram
-    7abc1b89-51eb-47fa-93ec-9ca1c8481deb: 'Social Handles' # Social Handles
-    7b4c7977-b184-419a-9e29-3df705ca1af7: 'Day of Week' # Day of Week
-    7f3e0b6d-485a-46ab-95db-89be18c35195: 'Social Media' # Social Media
-    8a1436e1-4998-464f-9129-db378bfcdb94: Locations # Locations
-    8bac3c22-b6fb-416a-bc27-21365d68d02b: Jaygreentree # Jaygreentree
-    8d552eeb-8e83-48fb-b86c-0ea100064333: 'Intro Video ID' # Intro Video ID
-    8f94aa3b-9319-43b9-a906-b7c2315b5335: 'Feature Image' # Feature Image
-    9a65fda4-d6ae-490a-a4a4-3c08fc4b2f2e: Series # Series
-    9a595275-36b0-484a-b00f-9b3b8a2c12e8: 'Generic Church' # Generic Church
-    9d2583e4-b7b3-4dd0-872c-c0e98f7cbe71: 'End Date' # End Date
-    9f5ccf81-a373-4d3c-998e-3b0670efab59: Email # Email
-    9f2693f1-d59a-44f6-93db-f21f7e924cb6: 'Button Url' # Button Url
-    15f5e021-346f-4055-a241-60733ac17fe8: 'Home Cards' # Home Cards
-    22a4d544-d2b3-4b3d-9b73-8c6b2471d6f4: iframe # iframe
-    26aaf9f7-9a09-438e-9cae-c88fc1c7ccb4: Series # Series
-    28b7a08a-92c0-48ba-adec-f4b8fedd0a1d: Staff # Staff
-    30fe77a7-29bc-413e-8110-4a0140ba74b3: 'Home Cards' # Home Cards
-    50c179f4-bbec-4f02-8277-895593769759: Email # Email
-    057fa019-28b3-47a7-9fd1-400aeb20859b: 'NR Card' # NR Card
-    60db0fed-ce20-46e2-99dc-4889220c86d4: Speaker # Speaker
-    65d96f6d-1008-40ba-a34c-88f3769be3a1: 'Small Groups' # Small Groups
-    73de1ba3-95a4-4206-862f-bb3a573e0c5e: Forms # Forms
-    87aab7f7-cc91-4ad8-9e08-8cb499a67757: Twitter # Twitter
-    89ff210c-2287-4e0c-b732-43ee5e3e50fc: Events # Events
-    90c63d0f-d27d-43ca-82c5-b44e5fde5f49: 'Small Groups' # Small Groups
-    92b63721-7bbf-4a5b-8b21-3ada7b4ba6da: 'Day of Week' # Day of Week
-    236ad58c-2026-4079-be32-83ab61515def: countdown # countdown
-    522c3654-5f52-48fa-aa24-297f6ff7a05b: Twitter # Twitter
-    776ccb4a-3f14-4b2c-be86-82f7a20d4e77: Promo # Promo
-    1346f6c6-774e-4d0f-a8c2-c58b27da7a83: Blog # Blog
-    1368d3cc-7303-41de-bcdc-1a91b1c40b18: Time # Time
-    2041d288-85b7-482d-b45a-563fa480a1a1: Promo # Promo
-    2735c953-b32f-433e-910c-32049ea79d77: Notes # Notes
-    2826b32c-7080-4158-a232-1ae43a29ae56: 'Start Date' # Start Date
-    5060f499-3916-46d5-a8bd-8f8fb7925fad: live # live
-    5424eec4-ecb8-415d-a7c6-0669595caf26: live # live
-    7750d3a1-c76f-4f15-8cea-2e80c2308266: 'Current Series?' # Current Series?
-    045575a2-4d92-4f2a-bf0f-913118837cf4: Home # Home
-    53921f42-af47-46e4-9b8c-f5df3c06352c: Role # Role
-    233476be-c504-409b-8a3b-5f0684af563a: 'Series Details' # Series Details
-    297170be-5401-4d6d-b1f5-b914504e870f: Pages # Pages
-    495826a1-517d-41b2-b284-9568f9ed00c3: 'Series Summary' # Series Summary
-    08527894-49ee-41ea-9f71-4535c3e647c9: Instagram # Instagram
-    a9bfaa8c-e93f-4a15-b2c5-f6f2caf578a8: 'Background Image' # Background Image
-    a9e69143-1367-4c57-94ce-9d6bb2e1f23a: Promo # Promo
-    a14eea38-2597-4d2d-88e3-321f7184b44f: 'Video Link' # Video Link
-    a167d85a-cc4a-4d85-bcb1-b28f40a3cef2: 'Video Embed' # Video Embed
-    a958588c-4824-4a7c-ac01-9e95e123540d: 'Related Message' # Related Message
-    b8edb79a-303d-4912-ae5c-052ca4798b63: Instagram # Instagram
-    b9f9776e-c824-484d-8187-acc329750eae: 'Day of Week' # Day of Week
-    b3930f0a-8d5d-4d59-9b08-8ec4a4b36881: Forms # Forms
-    b5957e76-efff-4853-aa55-c35ffb55d16f: Pages # Pages
-    bab87437-98f9-488f-afac-e9aafd543590: Twitter # Twitter
-    bc39d916-ae09-4c95-8a71-538b3dcf3a32: Events # Events
-    bcd40e3f-1970-4a84-9e8f-31459b580ffd: 'Service Times' # Service Times
-    be7a30b0-cb97-45a6-80e3-f9f632269571: Phone # Phone
-    be88615c-4ee9-407f-b46c-d9702f140ee7: Locations # Locations
-    c5dd1380-3047-4d82-bb9e-aef5dc4df55a: 'Background Image' # Background Image
-    c7edbf74-f824-4359-9211-2aa3f97e5c82: Address # Address
-    ccfd9226-bb3d-458a-bb15-e486a14b382e: Source # Source
-    cf39e5f6-a8bf-46aa-9b42-5f9bdc9efd43: Pages # Pages
-    d368f53e-2c72-463d-b4db-a0d1704629dc: Site # Site
-    dadde2a4-9812-4835-9c10-4ddf3692bec9: Facebook # Facebook
-    dbda67eb-4e8d-493d-a5f3-f82d21f8cc26: 'Home Mosaic' # Home Mosaic
-    dc0a66c8-bf3d-48f0-bf56-5a9a1003fe77: Series # Series
-    defed97c-2791-4d77-a47a-85269267e5e5: Globals # Globals
-    e3fe6f3d-de4f-44d9-8f1f-a9d0437a675b: Default # Default
-    e6f36375-8962-44bf-b518-8aa65b31bf9a: Default # Default
-    e25fc146-4df1-4aac-90bc-23eee1d7ee0f: Staff # Staff
-    e40b6dc2-97cd-4cb3-9984-62fa7e8c6a00: Message # Message
-    e663fcf8-b2d6-476d-a62f-bc0b724d788a: Home # Home
-    ee64a43e-c973-4426-be1c-0273126b2708: 'Audio Link' # Audio Link
-    f1dc4140-ccef-4e7b-ad58-af55566e9136: Common # Common
-    f3a087bc-5352-4a60-86e2-105c76087355: 'Study Notes Link' # Study Notes Link
-    f3a54380-1a0d-4a3c-880e-99c8e84f25b1: Times # Times
-    f796ff81-c977-47c7-8be5-cf669310bb22: Video # Video
-    f804b9c9-50d9-4a65-a277-1b2476adb1c2: Facebook # Facebook
-    f865f208-35a6-4e5f-aa9f-f884d875685c: Staff # Staff
-    f779877d-1004-4916-8476-dea7c6ee2e3a: Blog # Blog
-    fe9bf7b1-f28d-4a15-84e3-688b2aead3fb: 'Speaker Title' # Speaker Title
-    ff468b7c-09a0-469b-8684-d6285b5b037d: 'Page Content' # Page Content
+    0b89e4f1-f1aa-4ed4-87ab-240151c069a2: 'Social Handles' # Social Handles
+    0c9752d7-5b68-47c0-b17f-f530b8cf974b: Address # Address
+    1a1f2bff-f2d7-4eaf-92d9-d7d5546148ba: 'End Date' # End Date
+    1b093bf3-86b7-467f-a161-fc1808516a72: Forms # Forms
+    2d013c9e-bfbc-478c-abf8-805784c3b2a8: Facebook # Facebook
+    5a5369c0-b316-4832-9b47-6636a192a62a: 'Series Details' # Series Details
+    5ddf085a-b015-4710-91c4-c06bad180928: 'Series Image' # Series Image
+    6e444fcf-fcd6-4dff-9de9-acf62e7bc560: Staff # Staff
+    6ee538c3-47b6-4c55-8933-278cf7ec699d: 'Day of Week' # Day of Week
+    7dbfc199-6e96-41be-9abc-fd66f99c4dc5: 'Study Notes Link' # Study Notes Link
+    8c41fa4f-2c56-4f83-884e-eae8bc6184d6: Source # Source
+    9a1e97b2-5c7a-4aef-8ed6-7c7d622fc5ac: 'Audo Link' # Audo Link
+    9d44fa94-bc9b-4ab2-bbfc-061a058a5f8a: Instagram # Instagram
+    15b58950-2892-4cb0-a38b-110c823048c8: Bio # Bio
+    35c38b06-ce69-43d7-a836-76e6bf949e88: Time # Time
+    54bc291c-850e-4c26-9ec7-370b5db57de6: Role # Role
+    60fd4a71-768c-4c89-a84b-4d7375d348ca: Phone # Phone
+    65ee6975-465c-4135-a6e5-a45ce81a6535: Promo # Promo
+    69c1d49e-0092-4aff-acc8-209714843157: 'Related Message' # Related Message
+    074d638d-9959-4197-a3d9-1592372d2585: Series # Series
+    86f3393d-e7ea-4fee-ac65-fd354c7a22b3: 'Craft Church Demo' # Craft Church Demo
+    88f98c61-cc91-4edd-bc01-a746144d7224: live # live
+    99c21259-36cb-47f5-a6f1-7b1f79f7b3be: 'Craft Church Demo' # Craft Church Demo
+    223e4229-d6e3-48f5-95a8-0aa777c37925: 'Feature Image' # Feature Image
+    581ba12f-53d8-41f2-aa87-9d0723939ed6: Email # Email
+    683b3f73-dc62-455c-9512-3ac50366b927: 'Service Times' # Service Times
+    719d96fe-03ca-4efb-81d6-c71ab08badb9: 'Home Cards' # Home Cards
+    0759b0d2-7a69-4b31-9864-246df819554b: Series # Series
+    3580a33d-0d84-42fa-89f7-b171d0f81e1e: Time # Time
+    5083c36c-367e-453b-a14b-7d62e1beac84: 'Speaker Title' # Speaker Title
+    5666f4aa-0bec-4734-9e00-6251055f9e13: Pages # Pages
+    23969af4-c481-4cee-b31b-9adc98715631: 'Video Link' # Video Link
+    30163cc6-06d8-4e24-8564-a7654b21737f: Series # Series
+    84046e65-2dce-4a1c-bc16-b5ea0e872818: Facebook # Facebook
+    404912d1-43d5-4236-818c-bb2d28f39e5a: Twitter # Twitter
+    635687d4-6c85-42a2-a97c-c9adf0ab9eb6: Email # Email
+    659535b6-6f74-4104-aa31-bc2a1c1efb94: 'Intro Video ID' # Intro Video ID
+    08256173-ec40-44f7-9b32-51e2d7eca2ed: Locations # Locations
+    78106212-4541-48ce-9ff4-921c9077a54d: 'Social Media' # Social Media
+    97396651-2a00-4b07-9a62-58bdf4756322: 'Current Series?' # Current Series?
+    a3bfcbfd-1d98-420a-a5d6-18ac82ee028e: 'Page Content' # Page Content
+    a78ef2de-1127-42e8-9008-42ab1a9ed433: 'Start Date' # Start Date
+    a716b0cb-5163-4bd7-9efc-836268bd2e03: 'Related Pages' # Related Pages
+    ab55b3e3-f708-409e-a744-7b1d07977c59: 'Series Summary' # Series Summary
+    c43d6761-0edf-4503-8e9e-6a2bebfcb73b: iframe # iframe
+    cabf5db1-8ddc-4576-b387-39d4366462cd: Message # Message
+    ce1525dd-673b-48de-a098-af7e66245dff: Notes # Notes
+    ce2803f0-5fa6-4658-8a5c-eca763ee474c: 'Background Image' # Background Image
+    d7a01f4a-4b95-4388-9ebf-2da5384373bd: Speaker # Speaker
+    d25aeb03-d642-4752-8689-2fc727718c6d: Twitter # Twitter
+    d76146b7-2eb7-45d7-9cd7-b352914c8319: 'Home Mosaic' # Home Mosaic
+    dbee687d-b986-4d4c-a4fa-040f87134908: Instagram # Instagram
+    e7525e11-bf19-4f3b-919a-4a4a5b7a14a9: 'Video Embed' # Video Embed
+    e95999f1-4f1f-439b-a8fd-4874c6f52fa1: 'Feature Image' # Feature Image
+    ec26a60c-b737-4c53-a5ac-a955ac6f05fe: 'Button Url' # Button Url
+    f0dbfa8d-752d-40d0-80d7-ce429f6385c4: 'Day of Week' # Day of Week
+    ff054d40-85ad-46d0-abfb-eb1475066a31: Common # Common
 plugins:
-  calendar:
-    edition: pro
-    enabled: true
-    licenseKey: B1DM7ZYNT0W3B8NCTBFBX29C
-    schemaVersion: 3.3.2
-  calendar-links:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  calendarize:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.3.0
-  cheat-sheet:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-    settings:
-      cheatSheetRoute: docs
-      cheatSheetWhitespace: \t
   ckeditor:
     edition: standard
     enabled: true
@@ -130,189 +83,12 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  cp-css:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.0
-    settings:
-      additionalCss: "#alerts {\r\n\tdisplay:none;\r\n}\r\n\r\n\r\n\r\n#nav {\r\n    background-color: #7D2B15;\r\n}\r\n\r\n#system-info {\r\n    background-color: #7D2B15;\r\n}\r\n\r\n/* Sidebar background color */\r\n#global-sidebar {\r\n    background: #7D2B15;\r\n}\r\n\r\n/* Header background color */\r\n#main-container #main #header {\r\n    background: #ebedef;\r\n}\r\n\r\n/* H1 tags */\r\nh1 {\r\n    color: #7D2B15;\r\n}\r\n\r\n/* Standard button color */\r\nbutton {\r\n    background: #7D2B15;\r\n}\r\n/* Hover button color */\r\nbutton.btn.submit:not(.disabled):not(.inactive):hover,\r\nbutton.btn.submit:not(.disabled):not(.inactive).hover {\r\n    background: #7D2B15;\r\n}\r\n/* Active button color */\r\nbutton.btn.submit:not(.disabled):not(.inactive):active,\r\nbutton.btn.submit:not(.disabled):not(.inactive).active {\r\n    background: #7D2B15;\r\n}"
-      cacheBusting: true
-      cssFile: ''
-  cp-nav:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.7
-    settings:
-      originalNavHash:
-        __assoc__:
-          -
-            - 89846bd7-c85a-449c-9231-a06219ff7d7d
-            - W3sibGFiZWwiOiJEYXNoYm9hcmQiLCJ1cmwiOiJkYXNoYm9hcmQiLCJmb250SWNvbiI6ImdhdWdlIn0seyJsYWJlbCI6IkVudHJpZXMiLCJ1cmwiOiJlbnRyaWVzIiwiZm9udEljb24iOiJzZWN0aW9uIn0seyJsYWJlbCI6Ikdsb2JhbHMiLCJ1cmwiOiJnbG9iYWxzIiwiZm9udEljb24iOiJnbG9iZSJ9LHsibGFiZWwiOiJBc3NldHMiLCJ1cmwiOiJhc3NldHMiLCJmb250SWNvbiI6ImFzc2V0cyJ9LHsibGFiZWwiOiJDYWxlbmRhciIsInVybCI6ImNhbGVuZGFyIiwiaWNvbiI6Ii9ob21lL2pheWdyZWVuL2NyYWZ0L3ZlbmRvci9zb2xzcGFjZS9jcmFmdC1jYWxlbmRhci9wYWNrYWdlcy9wbHVnaW4vc3JjL2ljb24tbWFzay5zdmciLCJzdWJuYXYiOnsibW9udGgiOnsibGFiZWwiOiJNb250aCIsInVybCI6ImNhbGVuZGFyL3ZpZXcvbW9udGgifSwid2VlayI6eyJsYWJlbCI6IldlZWsiLCJ1cmwiOiJjYWxlbmRhci92aWV3L3dlZWsifSwiZGF5Ijp7ImxhYmVsIjoiRGF5IiwidXJsIjoiY2FsZW5kYXIvdmlldy9kYXkifSwiZXZlbnRzIjp7ImxhYmVsIjoiRXZlbnRzIiwidXJsIjoiY2FsZW5kYXIvZXZlbnRzIn0sImNhbGVuZGFycyI6eyJsYWJlbCI6IkNhbGVuZGFycyIsInVybCI6ImNhbGVuZGFyL2NhbGVuZGFycyJ9LCJzZXR0aW5ncyI6eyJsYWJlbCI6IlNldHRpbmdzIiwidXJsIjoiY2FsZW5kYXIvc2V0dGluZ3MifSwicmVzb3VyY2VzIjp7ImxhYmVsIjoiUmVzb3VyY2VzIiwidXJsIjoiY2FsZW5kYXIvcmVzb3VyY2VzIn19fSx7ImxhYmVsIjoiU3ByaWciLCJ1cmwiOiJzcHJpZyIsImljb24iOiIvaG9tZS9qYXlncmVlbi9jcmFmdC92ZW5kb3IvcHV0eW91cmxpZ2h0c29uL2NyYWZ0LXNwcmlnL3NyYy9pY29uLW1hc2suc3ZnIn0seyJ1cmwiOiJ1dGlsaXRpZXMiLCJsYWJlbCI6IlV0aWxpdGllcyIsImZvbnRJY29uIjoidG9vbCIsImJhZGdlQ291bnQiOjB9LHsidXJsIjoic2V0dGluZ3MiLCJsYWJlbCI6IlNldHRpbmdzIiwiZm9udEljb24iOiJzZXR0aW5ncyJ9LHsidXJsIjoicGx1Z2luLXN0b3JlIiwibGFiZWwiOiJQbHVnaW4gU3RvcmUiLCJmb250SWNvbiI6InBsdWdpbiJ9XQ==
-  craft-rss:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.1
-  date-range:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  embeddedassets:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-    settings:
-      cacheDuration: 300
-      disableVimeoTracking: ''
-      embedlyKey: ''
-      facebookKey: ''
-      googleKey: ''
-      iframelyKey: ''
-      maxAssetNameLength: 50
-      maxFileNameLength: 50
-      minImageSize: 16
-      parameters:
-        -
-          __assoc__:
-            -
-              - param
-              - maxwidth
-            -
-              - value
-              - '1920'
-        -
-          __assoc__:
-            -
-              - param
-              - maxheight
-            -
-              - value
-              - '1080'
-      referer: 'https://jaygreentree.org/'
-      showThumbnailsInCp: true
-      soundcloudKey: ''
-      useYouTubeNoCookie: ''
-      whitelist:
-        - 'amazon.*'
-        - 'amazon.co.*'
-        - amcharts.com
-        - baidu.com
-        - collegehumor.com
-        - dailymotion.com
-        - deviantart.com
-        - embed.ly
-        - 'facebook.*'
-        - 'facebook.co.*'
-        - 'facebook.com.*'
-        - fb.com
-        - 'google.*'
-        - 'google.co.*'
-        - 'google.com.*'
-        - hulu.com
-        - iframely.com
-        - imgur.com
-        - instagr.am
-        - instagram.com
-        - kickstarter.com
-        - meetup.com
-        - meetupstatic.com
-        - netflix.com
-        - pbs.org
-        - nhpbs.org
-        - reddit.com
-        - soundcloud.com
-        - tiktok.com
-        - t.co
-        - 'twitter.*'
-        - 'twitter.co.*'
-        - 'twitter.com.*'
-        - twimg.com
-        - vimeo.com
-        - vine.co
-        - wikipedia.org
-        - wikimedia.org
-        - wordpress.com
-        - yahoo.com
-        - youtu.be
-        - youtube.com
-        - youtube-nocookie.com
-  keychain:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  pitch:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-    settings:
-      advancedCache: '1'
-      cacheDir: ''
-      cacheDuration: '2592000'
-      cssFormat: Expanded
-      formatOptions:
-        -
-          __assoc__:
-            -
-              - label
-              - Expanded
-            -
-              - value
-              - Expanded
-        -
-          __assoc__:
-            -
-              - label
-              - Compressed
-            -
-              - value
-              - Compressed
-      minifyFiles: '1'
-      useCache: '1'
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
-  redactor-anchors:
-    edition: standard
-    enabled: true
-    schemaVersion: '2.0'
-  redactor-custom-styles:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  redactor-font-awesome:
-    edition: standard
-    enabled: true
-    schemaVersion: '2.0'
-  redactor-grammar:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  scss:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  sprig:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.1
-  templatecomments:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  youtubeliveembed:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-    settings:
-      isLive: ''
-      youtubeChannelId: ''
 system:
-  edition: solo
+  edition: pro
   live: true
-  name: 'Generic Church'
-  retryDuration: null
-  schemaVersion: 3.7.33
-  timeZone: America/Indiana/Vincennes
+  name: 'Craft Church Demo'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
   defaultGroup: null

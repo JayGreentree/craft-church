@@ -1,0 +1,19 @@
+columnSuffix: zlqbssvo
+contentColumnType: text
+fieldGroup: 1b093bf3-86b7-467f-a161-fc1808516a72 # Forms
+handle: iframe
+instructions: null
+name: iframe
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,14 @@
+columnSuffix: xykrjxwg
+contentColumnType: string(255)
+fieldGroup: cabf5db1-8ddc-4576-b387-39d4366462cd # Message
+handle: studyNotesLink
+instructions: null
+name: 'Study Notes Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

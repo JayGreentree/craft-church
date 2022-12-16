@@ -1,0 +1,23 @@
+columnSuffix: tgwwgdzi
+contentColumnType: text
+fieldGroup: 6e444fcf-fcd6-4dff-9de9-acf62e7bc560 # Staff
+handle: bio
+instructions: null
+name: Bio
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  defaultTransform: null
+  initJs: null
+  purifierConfig: null
+  purifyHtml: false
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

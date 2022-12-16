@@ -12,20 +12,24 @@
 			{{ siteName }}</title>
 		<meta name='robots' content='noindex, nofollow'>
 		<link rel="stylesheet" href="/dist/styles/bootstrap.css">
-		
 		<link rel="stylesheet" href="/dist/styles/theme.css">
+		<link rel="stylesheet" href="/dist/styles/main.css">
+		<link rel="stylesheet" href="/dist/styles/custom.css">
 
 		{% block css %}{% endblock %}
 	</head>
 
-	<body class="page-{{ title }}">
+	<body class="">
 		<!--[if IE]>
 						<div class="alert alert-warning">
 						You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.      </div>
 						<![endif]-->
+		<div class="notification-bar">
+			Website maintenance in progress
+		</div>
 <header class="nr_navbar-container">
   <div class="container">
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav" aria-expanded="false">
@@ -34,8 +38,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="/">
-						<!--img src="/assets/images/logo-horizontal-2.png" height="100%"-->
-						{{ siteName }}
+						<img src="/assets/images/logo-horizontal-2.png" height="100%" alt="{{ siteName }}">
 					</a>
 				</div>
 
@@ -114,9 +117,7 @@
 		</div>
 		</header>
 		<!-- End header -->
-		<div class="notification-bar">
-			Website maintenance in progress
-		</div>
+
 		{% block content %}
 		{% endblock %}
 		
@@ -128,12 +129,13 @@
 	<div class="row" style="margin-bottom: 20px;">
 		<div class="col-sm-6 col-md-9">
 			<a href="/" class="text-white">
-				<h1 style="color:white;">{{ siteName }}</h1>
-				<!--img width="195px" src="/assets/images/logo-horizontal-white.png" class="img-fluid" alt="logo"-->
+				<!--h1 style="color:white;">{{ siteName }}</h1-->
+				<img width="195px" src="/assets/images/logo-horizontal-white.png" class="img-fluid" alt="logo">
 			</a>
 			<!-- White Logo -->
 		</div>
 		<div class="col-sm-6 col-md-3 text-right">
+		<!-- Begin Social Media Handles -->
 			{% for block in socialHandles.socialMedia.all() %}
 				{% if block.facebook %}
 					<a href="{{ block.facebook }}" class="nr_social-link" target="_blank">
@@ -156,9 +158,10 @@
 					</a>
 				{% endif %}
 			{% endfor %}
+			<!-- End Social Media Handles -->
 		</div>
 	</div>
-	<div class="row" style="display:none;">
+	<div class="row">
 		<div class="col-md-3">
 			<ul class="nr_footer-nav">
 				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1">
