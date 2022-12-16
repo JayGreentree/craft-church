@@ -1,0 +1,46 @@
+{% extends "_layout/_layout" %}
+{% block pagestyles %}
+	
+{% endblock %}
+
+{% set title = "Contact" %}
+
+{% block content %}
+
+	<div role="document">
+		<div class="content">
+			<main>
+				{% set image = entry.featureImage.one() %}
+				<div class="nr_page-header nr_page-header--has-image">
+					<div class="nr_page-header_image">
+						<div class="content" {% if image %} style="background-image: url('{{ image.getUrl }}')" {% endif %}></div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3" style="padding-top: 2rem;">
+							<div class="menu-main-menu-container">
+							
+								{% set entries = entry.relatedPages %}
+                                {% if entries|length %}
+								<ul id="menu-main-menu-1" class="nav nav-pills nav-stacked">
+									<h2>Other Forms</h2>
+										{% for nav in entries %}
+											<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-{{ nav.id }}">
+												<a title="{{ nav.title }}" href="{{ nav.url }}">{{ nav.title }}</a>
+											</li>
+										{% endfor %}
+                                    </ul>
+                                    {% endif %}
+								</div>
+							</div>
+							<div class="col-md-9">
+								<h1>{{ entry.title}}</h1>
+								{{ entry.iframe|raw }}
+							</div>
+						</div>
+					</div>
+				</main>
+				<!-- /.main -->
+			{% endblock %}

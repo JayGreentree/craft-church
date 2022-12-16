@@ -1,0 +1,14 @@
+columnSuffix: gneicinu
+contentColumnType: boolean
+fieldGroup: 0759b0d2-7a69-4b31-9864-246df819554b # Series
+handle: currentSeries
+instructions: null
+name: 'Current Series?'
+searchable: false
+settings:
+  default: false
+  offLabel: 'No'
+  onLabel: 'Yes'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

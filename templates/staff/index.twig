@@ -1,0 +1,60 @@
+{% extends "_layout/_layout" %}
+
+{% set title = "Our Staff" %}
+
+{% block content %}
+	<div class="container">
+		<h1 class="text-center">Our Staff</h1>
+
+
+		<div class="row">
+			{% for entry in craft.entries.section('staff').orderby('id desc').limit('4') %}
+				<div class="col-lg-5">
+					<div class="staffer">
+						<div class="staffer_image">
+							{% set image = entry.featureImage.one() %}
+							{% if image %}
+								<div class="content" style="background-image: url({{ image.Url }})"></div>
+							{% endif %}
+						</div>
+						<div class="staffer_info">
+							<h3>{{ entry.title }}</h3>
+							<p>
+								<strong>{{ entry.role }}</strong>
+							</p>
+							
+								<div style="margin-bottom: 15px;">
+                                {% for block in entry.socialMedia.all() %}
+									{% if block.facebook %}
+										<a href="{{ block.facebook }}" class="btn btn-primary" style="width: 50px">
+											<img src="/assets/images/social-facebook.svg" alt="Facebook">
+										</a>
+									{% endif %}
+									{% if block.twitter %}
+										<a href="{{ block.twitter }}" class="btn btn-primary" style="width: 50px">
+											<img src="/assets/images/social-twitter.svg" alt="Facebook">
+										</a>
+									{% endif %}
+									{% if block.instagram %}
+										<a href="{{ block.instagram }}" class="btn btn-primary" style="width: 50px">
+											<img src="/assets/images/social-instagram.svg" alt="Facebook">
+										</a>
+									{% endif %}
+									{% if block.email %}
+										<a href="{{ block.email }}" class="btn btn-primary" style="width: 50px">
+											<img src="/assets/images/social-email.svg" alt="Facebook">
+										</a>
+									{% endif %}
+								{% endfor %}
+							</div>
+
+							{{ entry.bio }}
+						</div>
+					</div>
+				</div>
+
+			</div>
+		{% endfor %}
+	</div>
+
+</div></div></div>{% endblock %}

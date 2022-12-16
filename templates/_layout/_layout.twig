@@ -1,0 +1,255 @@
+<!-- begin header -->
+
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			{% if title is defined %}
+				{{ title }}
+				-
+			{% endif %}
+			{{ siteName }}</title>
+		<meta name='robots' content='noindex, nofollow'>
+		<link rel="stylesheet" href="/dist/styles/bootstrap.css">
+		<link rel="stylesheet" href="/dist/styles/theme.css">
+		<link rel="stylesheet" href="/dist/styles/main.css">
+		<link rel="stylesheet" href="/dist/styles/custom.css">
+
+		{% block css %}{% endblock %}
+	</head>
+
+	<body class="">
+		<!--[if IE]>
+						<div class="alert alert-warning">
+						You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.      </div>
+						<![endif]-->
+		<div class="notification-bar">
+			Website maintenance in progress
+		</div>
+<header class="nr_navbar-container">
+  <div class="container">
+    <nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">
+						<img src="/assets/images/logo-horizontal-2.png" height="100%" alt="{{ siteName }}">
+					</a>
+				</div>
+
+				
+				<div class="collapse navbar-collapse nr_navbar" id="top-nav">
+					<div class="menu-main-menu-container">
+						<ul id="menu-main-menu" class="nav navbar-nav nr_navbar_nav navbar-right">
+							<li id="menu-item-7895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7896">
+								<a title="Home" href="/">Home</a>
+							</li>
+							<li id="menu-item-7896" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7896">
+								<a title="New Here" href="/new-here/">New Here</a>
+							</li>
+							<li id="menu-item-7897" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7897 dropdown">
+								<a title="About Us" href="/about-us/" class="dropdown-toggle" aria-haspopup="true">About Us
+									<span class="caret"></span>
+								</a>
+								<ul role="menu" class=" dropdown-menu">
+									<li id="menu-item-7906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7906">
+										<a title="KidzRock" href="/kidzrock/">KidzRock</a>
+									</li>
+									<li id="menu-item-7907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7907">
+										<a title="Students" href="/students/">Students</a>
+									</li>
+									<li id="menu-item-7908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7908">
+										<a title="Lead Team" href="/staff/">Staff</a>
+									</li>
+									<li id="menu-item-7909" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7909">
+										<a title="Beliefs" href="/beliefs/">Beliefs</a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-7898" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7898 dropdown">
+								<a title="Next Steps" href="/next-steps/" class="dropdown-toggle" aria-haspopup="true">Next Steps
+									<span class="caret"></span>
+								</a>
+								<ul role="menu" class=" dropdown-menu">
+									<li id="menu-item-7900" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7900">
+										<a title="Small Groups" href="/small-groups/">Small Groups</a>
+									</li>
+									<li id="menu-item-7901" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7901">
+										<a title="Growth Track" href="/growth-track/">Growth Track</a>
+									</li>
+									<li id="menu-item-7902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7902">
+										<a title="Rockstar Team" href="/rockstar-team/">Rockstar Team</a>
+									</li>
+									<li id="menu-item-7905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7905">
+										<a title="Baptism" href="/baptism/">Baptism</a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-7910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7910 dropdown">
+								<a title="Media" href="/series/" class="dropdown-toggle" aria-haspopup="true">Media
+									<span class="caret"></span>
+								</a>
+								<ul role="menu" class=" dropdown-menu">
+									<li id="menu-item-7912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7912">
+										<a title="Sermon Series" href="/series">Sermon Series</a>
+									</li>
+									<li id="menu-item-7913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7913">
+										<a title="Other Videos" href="/live/">Live</a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-8149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8149">
+								<a title="Giving" href="/giving/">Giving</a>
+							</li>
+							<li id="menu-item-7972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7972">
+								<a title="Contact Us" href="/contact-us/">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		</div>
+		</header>
+		<!-- End header -->
+
+		{% block content %}
+		{% endblock %}
+		
+		<!-- Begin Footer -->
+
+
+<footer class="container-fluid">
+<div class="container">
+	<div class="row" style="margin-bottom: 20px;">
+		<div class="col-sm-6 col-md-9">
+			<a href="/" class="text-white">
+				<!--h1 style="color:white;">{{ siteName }}</h1-->
+				<img width="195px" src="/assets/images/logo-horizontal-white.png" class="img-fluid" alt="logo">
+			</a>
+			<!-- White Logo -->
+		</div>
+		<div class="col-sm-6 col-md-3 text-right">
+		<!-- Begin Social Media Handles -->
+			{% for block in socialHandles.socialMedia.all() %}
+				{% if block.facebook %}
+					<a href="{{ block.facebook }}" class="nr_social-link" target="_blank">
+						<img src="/assets/images/social-facebook.svg" alt="Facebook">
+					</a>
+				{% endif %}
+				{% if block.twitter %}
+					<a href="{{ block.twitter }}" class="nr_social-link" target="_blank">
+						<img src="/assets/images/social-twitter.svg" alt="Facebook">
+					</a>
+				{% endif %}
+				{% if block.instagram %}
+					<a href="{{ block.instagram }}" class="nr_social-link" target="_blank">
+						<img src="/assets/images/social-instagram.svg" alt="Facebook">
+					</a>
+				{% endif %}
+				{% if block.email %}
+					<a href="{{ block.email }}" class="nr_social-link" target="_blank">
+						<img src="/assets/images/social-email.svg" alt="Facebook">
+					</a>
+				{% endif %}
+			{% endfor %}
+			<!-- End Social Media Handles -->
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<ul class="nr_footer-nav">
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1">
+					<a href="/next-steps/">Next Steps</a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2">
+					<a href="/growth-track">Growth Track</a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3">
+					<a href="/rockstar-team">Rockstar Team</a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4">
+					<a href="/baptism">Baptism</a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5">
+					<a href="/small-groups/">Small Groups</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<ul class="nr_footer-nav">
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1">
+					<a href="/about-us/">About Us</a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2">
+					<a href="/kids">Kidsrock</a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3">
+					<a href="/students/">Students</a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4">
+					<a href="/staff">Lead Team</a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5">
+					<a href="/beliefs">Beliefs</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<ul class="nr_footer-nav">
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1">
+					<a href="/series/">Sermons</a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2">
+					<a href="/online/">Church Online</a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3">
+					<a href="/contact-us">Contact Us</a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4">
+					<a href=""></a>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5">
+					<a href=""></a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<div class="nr_card nr_card--blank">
+				<ul class="nr_footer-nav">
+					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1">
+						<a href=""></a>
+					</li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2">
+						<a href=""></a>
+					</li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3">
+						<a href=""></a>
+					</li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4">
+						<a href=""></a>
+					</li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5">
+						<a href=""></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" id="jquery-js"></script>
+<script src="/dist/scripts/scripts.js"></script>
+<script src="/dist/scripts/main-4856dfa21a.js"></script>
+{% block js %}{% endblock %}
+<!-- /.content -->
+<!-- End footer -->
+
+
+</body>
+</html>

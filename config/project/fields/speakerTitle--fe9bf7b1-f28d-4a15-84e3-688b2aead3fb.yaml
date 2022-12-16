@@ -1,0 +1,19 @@
+columnSuffix: khksdphf
+contentColumnType: text
+fieldGroup: 1aee728c-d68f-485f-ab5f-e75e6781131a # Message
+handle: speakerTitle
+instructions: ''
+name: 'Speaker Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: '1'
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

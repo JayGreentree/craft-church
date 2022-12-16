@@ -1,0 +1,57 @@
+{% extends "_layout/_layout" %}
+{% block pagestyles %}
+	home page
+{% endblock %}
+
+{% set title = "entry.title" %}
+
+{% block content %}
+
+	<div role="document">
+		<div class="content">
+			<main>
+				{% set image = entry.featureImage.one() %}
+				<div class="nr_page-header nr_page-header--has-image">
+					<div class="nr_page-header_image">
+						<div class="content" {% if image %} style="background-image: url('{{ image.getUrl }}')" {% endif %}></div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3" style="padding-top: 2rem;">
+							<div class="menu-main-menu-container">
+							
+								{% set entries = entry.relatedPages.all() %}
+								<ul class="nav nav-pills nav-stacked">
+									{% if entries|length %}
+										{% for nav in entries %}
+											<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-{{ nav.id }}">
+												<a title="{{ nav.title }}" href="{{ nav.url }}">{{ nav.title }}</a>
+											</li>
+										{% endfor %}
+									{% endif %}
+									<!--li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7906">
+																			<a title="KidzRock" href="https://web.archive.org/web/20161119191325/http://northrocksa.com/about-us/kidzrock/">KidzRock</a>
+																		</li>
+																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7907">
+																			<a title="Students" href="https://web.archive.org/web/20161119191325/http://northrocksa.com/about-us/students/">Students</a>
+																		</li>
+																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7908">
+																			<a title="Lead Team" href="https://web.archive.org/web/20161119191325/http://northrocksa.com/about-us/staff/">Lead Team</a>
+																		</li>
+																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7909">
+																			<a title="Beliefs" href="https://web.archive.org/web/20161119191325/http://northrocksa.com/about-us/beliefs/">Beliefs</a>
+																		</li>
+																	</ul-->
+								</div>
+							</div>
+							<div class="col-md-9">
+								<h1>{{ entry.title}}</h1>
+								{{ entry.pageContent }}
+							</div>
+						</div>
+					</div>
+				</main>
+				<!-- /.main -->
+			{% endblock %}

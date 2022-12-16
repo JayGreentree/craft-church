@@ -1,0 +1,97 @@
+dateModified: 1671182072
+email:
+  fromEmail: jgreentreevin@gmail.com
+  fromName: 'Craft Church Demo'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  featureImage:
+    hasUrls: true
+    name: 'Feature Image'
+    settings:
+      path: '@webroot/assets/images/feature'
+    type: craft\fs\Local
+    url: /assets/images/feature/
+meta:
+  __names__:
+    0b89e4f1-f1aa-4ed4-87ab-240151c069a2: 'Social Handles' # Social Handles
+    0c9752d7-5b68-47c0-b17f-f530b8cf974b: Address # Address
+    1a1f2bff-f2d7-4eaf-92d9-d7d5546148ba: 'End Date' # End Date
+    1b093bf3-86b7-467f-a161-fc1808516a72: Forms # Forms
+    2d013c9e-bfbc-478c-abf8-805784c3b2a8: Facebook # Facebook
+    5a5369c0-b316-4832-9b47-6636a192a62a: 'Series Details' # Series Details
+    5ddf085a-b015-4710-91c4-c06bad180928: 'Series Image' # Series Image
+    6e444fcf-fcd6-4dff-9de9-acf62e7bc560: Staff # Staff
+    6ee538c3-47b6-4c55-8933-278cf7ec699d: 'Day of Week' # Day of Week
+    7dbfc199-6e96-41be-9abc-fd66f99c4dc5: 'Study Notes Link' # Study Notes Link
+    8c41fa4f-2c56-4f83-884e-eae8bc6184d6: Source # Source
+    9a1e97b2-5c7a-4aef-8ed6-7c7d622fc5ac: 'Audo Link' # Audo Link
+    9d44fa94-bc9b-4ab2-bbfc-061a058a5f8a: Instagram # Instagram
+    15b58950-2892-4cb0-a38b-110c823048c8: Bio # Bio
+    35c38b06-ce69-43d7-a836-76e6bf949e88: Time # Time
+    54bc291c-850e-4c26-9ec7-370b5db57de6: Role # Role
+    60fd4a71-768c-4c89-a84b-4d7375d348ca: Phone # Phone
+    65ee6975-465c-4135-a6e5-a45ce81a6535: Promo # Promo
+    69c1d49e-0092-4aff-acc8-209714843157: 'Related Message' # Related Message
+    074d638d-9959-4197-a3d9-1592372d2585: Series # Series
+    86f3393d-e7ea-4fee-ac65-fd354c7a22b3: 'Craft Church Demo' # Craft Church Demo
+    88f98c61-cc91-4edd-bc01-a746144d7224: live # live
+    99c21259-36cb-47f5-a6f1-7b1f79f7b3be: 'Craft Church Demo' # Craft Church Demo
+    223e4229-d6e3-48f5-95a8-0aa777c37925: 'Feature Image' # Feature Image
+    581ba12f-53d8-41f2-aa87-9d0723939ed6: Email # Email
+    683b3f73-dc62-455c-9512-3ac50366b927: 'Service Times' # Service Times
+    719d96fe-03ca-4efb-81d6-c71ab08badb9: 'Home Cards' # Home Cards
+    0759b0d2-7a69-4b31-9864-246df819554b: Series # Series
+    3580a33d-0d84-42fa-89f7-b171d0f81e1e: Time # Time
+    5083c36c-367e-453b-a14b-7d62e1beac84: 'Speaker Title' # Speaker Title
+    5666f4aa-0bec-4734-9e00-6251055f9e13: Pages # Pages
+    23969af4-c481-4cee-b31b-9adc98715631: 'Video Link' # Video Link
+    30163cc6-06d8-4e24-8564-a7654b21737f: Series # Series
+    84046e65-2dce-4a1c-bc16-b5ea0e872818: Facebook # Facebook
+    404912d1-43d5-4236-818c-bb2d28f39e5a: Twitter # Twitter
+    635687d4-6c85-42a2-a97c-c9adf0ab9eb6: Email # Email
+    659535b6-6f74-4104-aa31-bc2a1c1efb94: 'Intro Video ID' # Intro Video ID
+    08256173-ec40-44f7-9b32-51e2d7eca2ed: Locations # Locations
+    78106212-4541-48ce-9ff4-921c9077a54d: 'Social Media' # Social Media
+    97396651-2a00-4b07-9a62-58bdf4756322: 'Current Series?' # Current Series?
+    a3bfcbfd-1d98-420a-a5d6-18ac82ee028e: 'Page Content' # Page Content
+    a78ef2de-1127-42e8-9008-42ab1a9ed433: 'Start Date' # Start Date
+    a716b0cb-5163-4bd7-9efc-836268bd2e03: 'Related Pages' # Related Pages
+    ab55b3e3-f708-409e-a744-7b1d07977c59: 'Series Summary' # Series Summary
+    c43d6761-0edf-4503-8e9e-6a2bebfcb73b: iframe # iframe
+    cabf5db1-8ddc-4576-b387-39d4366462cd: Message # Message
+    ce1525dd-673b-48de-a098-af7e66245dff: Notes # Notes
+    ce2803f0-5fa6-4658-8a5c-eca763ee474c: 'Background Image' # Background Image
+    d7a01f4a-4b95-4388-9ebf-2da5384373bd: Speaker # Speaker
+    d25aeb03-d642-4752-8689-2fc727718c6d: Twitter # Twitter
+    d76146b7-2eb7-45d7-9cd7-b352914c8319: 'Home Mosaic' # Home Mosaic
+    dbee687d-b986-4d4c-a4fa-040f87134908: Instagram # Instagram
+    e7525e11-bf19-4f3b-919a-4a4a5b7a14a9: 'Video Embed' # Video Embed
+    e95999f1-4f1f-439b-a8fd-4874c6f52fa1: 'Feature Image' # Feature Image
+    ec26a60c-b737-4c53-a5ac-a955ac6f05fe: 'Button Url' # Button Url
+    f0dbfa8d-752d-40d0-80d7-ce429f6385c4: 'Day of Week' # Day of Week
+    ff054d40-85ad-46d0-abfb-eb1475066a31: Common # Common
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  codefield:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cp-clearcache:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: 'Craft Church Demo'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

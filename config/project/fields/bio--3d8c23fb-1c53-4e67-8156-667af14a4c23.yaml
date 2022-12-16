@@ -1,0 +1,23 @@
+columnSuffix: mhsalpab
+contentColumnType: text
+fieldGroup: 28b7a08a-92c0-48ba-adec-f4b8fedd0a1d # Staff
+handle: bio
+instructions: ''
+name: Bio
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  defaultTransform: ''
+  initJs: null
+  purifierConfig: ''
+  purifyHtml: '1'
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showUnpermittedFiles: ''
+  showUnpermittedVolumes: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

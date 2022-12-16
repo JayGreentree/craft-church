@@ -1,0 +1,37 @@
+field: 7f3e0b6d-485a-46ab-95db-89be18c35195 # Social Media
+fieldLayouts:
+  1e258cef-f69c-4112-b9af-b8dc844939c5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 522c3654-5f52-48fa-aa24-297f6ff7a05b # Twitter
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  522c3654-5f52-48fa-aa24-297f6ff7a05b: # Twitter
+    columnSuffix: ezgrqvnz
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: twitter
+    instructions: ''
+    name: Twitter
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: twitter
+name: Twitter
+sortOrder: 2

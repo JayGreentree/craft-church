@@ -1,0 +1,19 @@
+columnSuffix: odtrglxm
+contentColumnType: text
+fieldGroup: 28b7a08a-92c0-48ba-adec-f4b8fedd0a1d # Staff
+handle: role
+instructions: 'What is the job title of this person?'
+name: Role
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

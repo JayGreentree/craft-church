@@ -1,0 +1,46 @@
+field: 683b3f73-dc62-455c-9512-3ac50366b927 # Service Times
+fieldLayouts:
+  d4b3fc38-3207-43ce-a22e-c3e32510b472:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6ee538c3-47b6-4c55-8933-278cf7ec699d # Day of Week
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d2d2b1b6-898d-4a29-b155-491c8e508167
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 334989ef-d0a4-4993-b1e2-0a30f078a5cf
+        userCondition: null
+fields:
+  6ee538c3-47b6-4c55-8933-278cf7ec699d: # Day of Week
+    columnSuffix: akcxoyhp
+    contentColumnType: text
+    fieldGroup: null
+    handle: dayOfWeek
+    instructions: null
+    name: 'Day of Week'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: dayOfWeek
+name: 'Day of Week'
+sortOrder: 1

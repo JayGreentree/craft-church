@@ -1,0 +1,78 @@
+{% extends "_layout/_layout" %}
+
+{% set title = "Small Groups" %}
+
+{% block pagestyles %}
+	home page
+{% endblock %}
+
+{% block content %}
+
+
+	<div role="document">
+		<div class="content">
+			<main>
+
+				<div id="bid_6400" data-zone-location="Page" class="block-instance js-block-instance html-content">
+					<div class="block-content">
+						<div id="ctl00_main_ctl12_ctl01_ctl00_upnlHtmlContentView">
+
+							<div>
+								<h2 style="text-align: center;">JOIN A SMALL GROUP</h2>
+								<p style="text-align: center;">Get Connected | Serve | Grow</p>
+								<p style="text-align: center;"></p>
+							</div>
+
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div id="section-b-bg" class="col-md-12">
+						<div id="zone-sectionb" class="zone-instance">
+							<div class="zone-content">
+								<div id="bid_3847" data-zone-location="Page" class="block-instance js-block-instance html-content">
+									<div class="block-content">
+										<div id="ctl00_main_ctl14_ctl01_ctl00_upnlHtmlContentView">
+
+											<div class="campus-cards-row">
+												{% for entry in craft.entries.section('groups').orderby('title') %}
+													<!-- begin campus card -->
+													<div class="campus-card 8">
+														<div class="image">{% set image = entry.featureImage.one() %}
+															{% if image %}
+																<img src="{{ image.Url }}" alt="">
+															{% endif %}
+														</div>
+														<div class="card-content">
+															<div class="header">
+																<h4>{{ entry.title }}</h4>
+															</div>
+															<div class="content location-contact">
+																<div class="address">
+
+																</div>
+
+																{% if entry.phone %}
+																	{{ tag('a', {text: entry.phone, href: entry.phone}) }}
+																{% endif %}
+															</div>
+															<div class="content service-times mt-25">
+                                                                {{ entry.pageContent }}
+															</div>
+
+
+															<div class="link">
+																<a class="btn btn-primary" href="{{ entry.url }}">Learn More</a>
+															</div>
+														</div>
+													</div>
+												{% endfor %}
+											</div>
+
+										</main>
+									</div>
+								</div>
+							{% endblock %}

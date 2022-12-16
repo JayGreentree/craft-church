@@ -1,0 +1,15 @@
+columnSuffix: xdqtkpiy
+contentColumnType: string(255)
+fieldGroup: 1aee728c-d68f-485f-ab5f-e75e6781131a # Message
+handle: studyNotesLink
+instructions: ''
+name: 'Study Notes Link'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

@@ -1,0 +1,41 @@
+field: 78106212-4541-48ce-9ff4-921c9077a54d # Social Media
+fieldLayouts:
+  15287f19-201b-471f-94d0-7ddfd090dc02:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 635687d4-6c85-42a2-a97c-c9adf0ab9eb6 # Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 104e5237-6092-4165-8658-88ab9b32f284
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bfe024aa-fb4a-407a-98d0-72c039f43152
+        userCondition: null
+fields:
+  635687d4-6c85-42a2-a97c-c9adf0ab9eb6: # Email
+    columnSuffix: mxlzkioi
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: email
+    instructions: null
+    name: Email
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - email
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: email
+name: Email
+sortOrder: 4

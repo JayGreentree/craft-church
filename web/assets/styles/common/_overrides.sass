@@ -1,0 +1,92 @@
+// Typography
+a
+	font-family: $font-family-sans-serif
+	&:hover
+		text-decoration: none
+
+blockquote
+	border-left-color: $brand-secondary
+
+.widget > h3 
+	margin-top: 0
+
+// Buttons
+.btn
+	font-size: 18px
+	font-weight: 900
+	border-radius: 1px
+	text-transform: uppercase
+	border-width: 2px
+	font-family: $font-family-sans-serif
+	overflow: hidden
+	text-shadow: none
+	&:active
+		box-shadow: none
+
+.jumbotron
+	text-shadow: 0 0 10px #000
+
+// Dropdowns
+@media screen and (min-width: $screen-sm)
+	.dropdown-menu
+			border: none
+			border-radius: 0 0 3px 3px
+			border-top: 0
+			box-shadow: 0 2px 4px rgba(0,0,0,0.4)
+			padding: 0
+			overflow: hidden
+
+			.menu-item
+				border-bottom: 1px solid $gray-light
+				
+				> a
+					text-align: center
+					line-height: 40px
+					font-weight: 700
+
+
+				&:last-child
+					border-bottom: 0
+
+// Nav
+.nav > li:hover > a
+	color: #fff
+
+// Navbar
+.navbar
+	border: none
+	box-shadow: 0 2px 4px $shadow-color
+	&-btn
+		margin-top: 12px
+		margin-bottom: 12px
+	@media screen and (min-width: $screen-sm) and (max-width: $screen-md)
+		&-nav > .menu-item > a
+			font-size: 1.15rem
+			padding-left: 10px 
+			padding-right: 10px 
+.navbar-brand
+	padding-top: 0
+	padding-bottom: 0
+	// margin: 0 !important
+	display: flex
+	flex-direction: column
+	justify-content: center
+	& > img
+		max-height: 40px
+.navbar-toggle
+	height: 30px
+	width: 30px
+	padding: 7px 6px
+	border-width: 2px
+	border-radius: 15px
+
+	.icon-bar
+		width: 15px
+
+// Media
+.media-left
+	margin-right: 20px
+	padding-right: 20px
+.media-object
+	max-width: 150px
+	max-height: 150px 

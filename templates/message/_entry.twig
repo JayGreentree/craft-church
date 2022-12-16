@@ -1,0 +1,64 @@
+{% extends "_layout/_layout" %}
+{% block class %}{% endblock %}
+
+
+{% block content %}
+	<main class="container">
+
+				<div class="nr_page-header nr_page-header--has-image"><br><br><br><br></div>
+
+				<div class="row">
+					<div class="d-flex p-2">
+						<article class="message-detail">
+
+
+							<h1>{{ entry.title }}</h1>
+
+							<p>
+								<strong>
+									{{ entry.speaker }}
+									-
+									{{ entry.startDate | date() }}</strong>
+							</p>
+
+							
+								<div class="col-md-8">
+									{{ entry.seriesDetails }}<br>
+                                <div class="embed-responsive embed-responsive-16by9"><iframe src="{{ entry.videoEmbed }}" title="YouTube video player" width="640" height="564" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+								</div>
+								<div class="col-md-4">
+									{% if entry.videoLink != '' or entry.audioLink != '' %}
+										<div class="panel panel-default">
+											<div class="panel-heading">Downloads &amp; Resources</div>
+											<div class="list-group">
+
+												{% if entry.videoLink != '' %}
+													<a href="{{ entry.videoLink }}" class="list-group-item">
+														<i class="fa fa-film"></i>
+														Video Download</a>
+												{% endif %}
+
+												{% if entry.audioLink != '' %}
+													<a href="{{ entry.audioLink }}" class="list-group-item">
+														<i class="fa fa-volume-up"></i>
+														Audio Download</a>
+												{% endif %}
+
+												{% if entry.studyNotesLink != '' %}
+													<a href="{{ entry.studyNotesLink }}" class="list-group-item">
+														<i class="fa-solid fa-file-pdf"></i>
+														Sermon Notes</a>
+												{% endif %}
+
+											</div>
+										</div>
+									{% endif %}
+								</div>
+							</row>
+						</article>
+					</div>
+				</div>
+			</main>
+
+{% endblock %}

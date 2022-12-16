@@ -1,0 +1,90 @@
+{% extends "_layout/_layout" %}
+{% block class %}
+	home page
+{% endblock %}
+{% block content %}
+
+<br>
+
+	<div class="promo">
+{% for entry in craft.entries.section('promo').orderby('id').limit('3') %}
+				{% set image = entry.backgroundImage.one %}
+		<div class="promo_video">
+			<video muted autoplay loop poster="{% if image %}style="background-image: url({{ image.getUrl }}"{% endif %}">
+				<source src="/assets/video/bg7.webm">
+				{% if image %}
+					<img src="{{ image.getUrl }}" alt="Your browser does not support HTML 5 Videos">
+				{% endif %}
+				</source>
+			</video>
+		</div>
+
+		<div class="content">
+			<div style="display: table; height: 100%; width: 100%;">
+				<div class="text-center" style="display:table-cell; vertical-align: middle;">
+					<h1>Welcome</h1>
+					<p>sample text here</p>
+					<a class="btn btn-primary">Give Online</a>
+					<a class="btn btn-primary">Latest Sermon</a>
+					<a class="btn btn-play nr_video-box" href="https://player.vimeo.com/video/{{ entry.intro_video_id }}?portrait=0&badge=0&byline=0&autoplay=1&portrait=0&color=B23615">
+						<img src="/assets/images/play.svg">
+					</a>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+
+	<div class="container nr_mosiac">
+		<div class="nr_mosiac_container">
+			{% for entry in craft.entries.section('series').orderby('id').limit('1') %}
+				{% set image = entry.featureImage.one() %}
+			<span class="nr_mosiac_flex-tile nr_mosiac_flex-tile--column nr_mosiac_flex-tile--horizontal-half nr_card" href="{{ entry.url }}">
+				<div class="nr_card_image nr_card_image--1x1">
+					<div class="content" {% if image %}style="background-image: url({{ image.getUrl }}"{% endif %} alt="Your browser does not support HTML 5 Videos">
+				</div>
+				</div>
+				<div class="nr_card_link">
+				<a href="{{ entry.url }}">	<span class="text-primary">Current Series: {{ entry.title }}<i class="glyphicon glyphicon-chevron-right pull-right"></i></a>
+				</div>	
+			</span>
+			{% endfor %}
+			{% include "templates/mosiac-5" %}
+		</div>
+	</div>
+
+{% for entry in craft.entries.section('home').orderby('id').limit('1') %}
+				{% set image = entry.featureImage.one() %}
+	<div class="nr_parallax-bg" {% if image %}style="background-image: url({{ image.getUrl }}){% endif %}">
+		<div class="container text-center">
+			<img width="50px" src="/assets/images/logo-mark.png">
+			<h1>
+			{{ siteName }}	
+			</h1>
+			{{ entry.pageContent }}
+		</div>
+	</div>
+	{% endfor %}
+
+	<div class="container">
+		<div class="flex-row">
+			{% for entry in craft.entries.section('homeCards').orderby('id').limit('4') %}
+				{% set image = entry.featureImage.one() %}
+				<a class="nr_card nr_card--flex text-center flex-item flex-column" href="{{ entry.buttonUrl }}">
+				{% if image %}
+					<img class="nr_card_image" src=" {{ image.getUrl }}">
+					{% endif %}
+					<div class="nr_card_content flex-fill flex-column">
+						<p class="flex-fill">
+							{{ entry.pageContent }}
+						</p>
+						<span class="btn btn-default btn-block">
+							{{ entry.title }}
+						</span>
+					</div>
+				</a>
+			{% endfor %}
+		</div>
+	</div>
+
+{% endblock %}

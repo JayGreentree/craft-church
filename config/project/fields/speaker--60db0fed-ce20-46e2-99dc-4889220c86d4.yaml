@@ -1,0 +1,19 @@
+columnSuffix: hjykfxej
+contentColumnType: text
+fieldGroup: 1aee728c-d68f-485f-ab5f-e75e6781131a # Message
+handle: speaker
+instructions: ''
+name: Speaker
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

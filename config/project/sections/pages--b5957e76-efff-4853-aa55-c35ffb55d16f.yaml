@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pages
+name: Pages
+propagationMethod: all
+siteSettings:
+  9a595275-36b0-484a-b00f-9b3b8a2c12e8: # Generic Church
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_entry
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: 2b204bb9-332a-4f49-871e-e6de3ac4ff0f
+type: structure

@@ -1,0 +1,15 @@
+columnSuffix: icqhgejc
+contentColumnType: string(255)
+fieldGroup: 2a2a13f3-54e3-4975-a9f7-e97fd63f3e2a # Locations
+handle: phone
+instructions: ''
+name: Phone
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - tel
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

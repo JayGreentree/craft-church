@@ -1,0 +1,72 @@
+{% extends "_layout/_layout" %}
+{% block class %}{% endblock %}
+
+{% set title = "Sermons" %}
+
+{% block content %}
+
+	<div id="zone-feature" class="zone-instance">
+		<div class="zone-content">
+			<div id="bid_4980" data-zone-location="Page" class="block-instance js-block-instance content-channel-view messages-grid">
+				<div class="block-content">
+
+							<!-- Begin Series Image -->
+							{% for entry in craft.entries.section('series').orderby('id desc').limit('12') %}
+								{% set image = entry.featureImage.one() %}
+							<div class="col-md-3 col-sm-12 sermon">
+								<div class="sermon-holder">
+									<a class="series-link showdetail" data-openid="series{{ entry.id }}" href="#series{{ entry.id }}">
+									{% if image %}
+										<div class="series-image" style="background-image: url('{{ image.getUrl }}');"></div>
+									{% endif %}
+									</a>
+								</div>
+							</div>
+							<!-- end series image -->
+							<!-- Begin relates messages -->
+							<div class="sermondetail" id="series{{ entry.id }}">
+								<div class="container">
+									<div class="content_holder row">
+										<div class="col-md-10 col-md-offset-1 col-sm-12">
+											<a class="closer">
+												<i class="np-icon np-close"></i>
+											</a>
+											<h2 class="series-title">{{ entry.title }}</h2>
+											<div class="series-summary">
+												<p>{{ entry.seriesSummary }}</p>
+											</div>
+											{% set entries = entry.relatedMessage.all() %}
+											{% if entries|length %}
+											<ul class="sermons-list">
+												{% for message in entries %}
+													<li>
+														<p class="date">{{ message.startDate|date() }}</p>
+														<h3>
+															<a href="{{ message.url }}">{{ message.title }}</a>
+														</h3>
+														<p>{{ message.seriesDetails }}</p>
+														<p class="speaker">{{ message.speaker }}</p>
+														<p class="readmore">
+															<a class="btn btn-outline-primary" href="{{ message.url }}">Watch</a>
+														</p>
+													</li>
+												{% endfor %}
+											</ul>
+											{% endif %}
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End relates messages -->
+							</div>
+{% endfor %}
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+{% endblock %}

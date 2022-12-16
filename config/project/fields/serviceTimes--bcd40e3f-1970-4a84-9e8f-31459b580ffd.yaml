@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 2a2a13f3-54e3-4975-a9f7-e97fd63f3e2a # Locations
+handle: serviceTimes
+instructions: ''
+name: 'Service Times'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_servicetimes}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
