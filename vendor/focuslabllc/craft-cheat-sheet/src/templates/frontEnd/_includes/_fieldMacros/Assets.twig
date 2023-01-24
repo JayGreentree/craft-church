@@ -1,0 +1,116 @@
+{%- macro cs_Assets(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Total number of assets', '
+		{{ ' ~ data.sampleTag ~ '.count() }}'
+	)}}
+
+
+	{{ macros.codeBlock('Common conditional', '
+		{% if ' ~ data.sampleTag ~ '.exists() %}\n'
+		~ data.whitespace ~ '...\n'
+		~ '{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through assets', '
+		{% for myAsset in '
+		~ data.sampleTag
+		~ '.all() %}\n'
+		~ data.whitespace
+		~ '{{ myAsset.url }}\n{% endfor %}'
+	)}}
+
+
+	{{ macros.codeBlock('Only return the first asset', '
+		{% set myAsset = '
+		~ data.sampleTag
+		~ '.one() %}\n{% if myAsset %}\n'
+		~ data.whitespace
+		~ '{{ myAsset.url }}\n{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Adjusting the limit', '
+		{% for myAsset in ' ~ data.sampleTag ~ '.limit(5).all() %}'
+	)}}
+
+
+	{{ macros.codeBlock('All asset variables', '
+		{% set myAsset = '
+		~ data.sampleTag
+		~ '.one() %}\n{% if myAsset %}\n'
+		~ data.whitespace
+		~ '{{ myAsset.dateCreated }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.dateUpdated }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.extension }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.filename }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.folder }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.folderId }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.height }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.id }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.img }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.kind }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.locale }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.link }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.mimeType }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.next }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.prev }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.size }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.volume }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.volumeId }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.url }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.width }}\n{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('All asset methods', '
+		{% set myAsset = '
+		~ data.sampleTag
+		~ '.one() %}\n{% if myAsset %}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getExtension() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getFolder() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getHeight( transform ) }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getImg() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getLink() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getMimeType() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getNext( params ) }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getPrev( params ) }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getSource() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getUrl( transform ) }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getWidth( transform ) }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.setTransform( transform ) }}\n{% endif %}'
+	)}}
+
+{% endmacro -%}

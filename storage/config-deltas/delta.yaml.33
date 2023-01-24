@@ -1,0 +1,15 @@
+dateApplied: '2022-12-15 22:43:59'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1671173006
+        to: 1671173039
+  -
+    added:
+      fieldGroups.65ee6975-465c-4135-a6e5-a45ce81a6535.name: Promo
+    message: 'Save field group “Promo”'
+  -
+    added:
+      meta.__names__.65ee6975-465c-4135-a6e5-a45ce81a6535: Promo

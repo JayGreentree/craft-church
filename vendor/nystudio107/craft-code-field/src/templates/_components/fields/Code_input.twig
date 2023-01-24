@@ -1,0 +1,88 @@
+{#
+/**
+ * Code Field plugin for Craft CMS
+ *
+ * Code Field Input
+ *
+ * @author    nystudio107
+ * @copyright Copyright (c) 2022 nystudio107
+ * @link      https://nystudio107.com
+ * @package   CodeField
+ * @since     4.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+{% import "codeeditor/codeEditor" as codeEditor %}
+
+{% set codeFieldId = id ?? field.getInputId() %}
+{% set config = {
+    id: codeFieldId ~ "value",
+    name: name ~ "[value]",
+    describedBy: field.describedBy,
+    placeholder: field.placeholder ?? "",
+    required: field.required,
+    first: true,
+    orientation: orientation ?? null,
+    value: value.value,
+} %}
+
+{# Monaco Editor options #}
+{% set monacoOptions = {
+    theme: field.theme,
+    language: value.language,
+    fontSize: field.fontSize,
+} %}
+{% if not field.singleLineEditor %}
+    {% if field.lineNumbers %}
+        {% set monacoOptions = monacoOptions | merge({
+            lineNumbers: 'on',
+            lineDecorationsWidth: 6,
+        }) %}
+    {% endif %}
+    {% if field.codeFolding %}
+        {% set monacoOptions = monacoOptions | merge({
+            folding: true,
+        }) %}
+    {% endif %}
+{% endif %}
+{% set monacoOptions = monacoOptions | merge(monacoOptionsOverride) %}
+{# Code Editor options #}
+{% set codeEditorOptions = {
+    wrapperClass: "monaco-editor-background-frame",
+    singleLineEditor: field.singleLineEditor,
+} %}
+{% if displayLanguages | length %}
+<fieldset class="code-field-fields">
+    <style>
+        fieldset.code-field-fields .status-badge {
+            display: none;
+        }
+    </style>
+    {% endif %}
+    {% if field.singleLineEditor %}
+        {{ codeEditor.textField(config, "CodeEditor", monacoOptions, codeEditorOptions) }}
+    {% else %}
+        {{ codeEditor.textareaField(config, "CodeEditor", monacoOptions, codeEditorOptions) }}
+    {% endif %}
+
+    {% if displayLanguages | length %}
+    {% set languageSwitcherId = codeFieldId ~ "language" %}
+    {{ forms.selectField({
+        id: languageSwitcherId,
+        name: codeFieldId ~ "[language]",
+        label: "Language"|t("codefield"),
+        value: value.language,
+        options: displayLanguages,
+    }) }}
+</fieldset>
+    {% js %}
+    var elementId = '{{ config.id | namespaceInputId }}';
+    var switchId = '{{ languageSwitcherId | namespaceInputId }}';
+    $('#' + switchId).on('change', function () {
+      var language = $(this).val();
+      var editor = monacoEditorInstances[elementId];
+      setMonacoEditorLanguage(editor, language, elementId);
+    });
+    {% endjs %}
+{% endif %}

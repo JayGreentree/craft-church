@@ -1,0 +1,26 @@
+{%- macro cs_Dropdown(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Field name', '
+		{{ ' ~ data.sampleTag ~ ' }}'
+	)}}
+
+
+	{{ macros.codeBlock('Field label', '
+		{{ ' ~ data.sampleTag ~ '.label }}'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through the options', '
+		<ul>\n'
+		~ data.whitespace
+		~ '{% for option in '
+		~ data.sampleTag
+		~ '.options %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '<li>{{ option }}</li>\n'
+		~ data.whitespace
+		~ '{% endfor %}\n</ul>'
+	)}}
+
+{% endmacro -%}

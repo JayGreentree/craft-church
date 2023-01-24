@@ -1,0 +1,15 @@
+dateApplied: '2022-12-15 22:29:11'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1671172069
+        to: 1671172151
+  -
+    added:
+      fieldGroups.5666f4aa-0bec-4734-9e00-6251055f9e13.name: Pages
+    message: 'Save field group “Pages”'
+  -
+    added:
+      meta.__names__.5666f4aa-0bec-4734-9e00-6251055f9e13: Pages

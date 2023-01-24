@@ -1,0 +1,827 @@
+{%- macro cs_Assets(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Total number of assets', '
+		{{ ' ~ data.sampleTag ~ '.count() }}'
+	)}}
+
+
+	{{ macros.codeBlock('Common conditional', '
+		{% if ' ~ data.sampleTag ~ '.exists() %}\n'
+		~ data.whitespace ~ '...\n'
+		~ '{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through assets', '
+		{% for myAsset in '
+		~ data.sampleTag
+		~ '.all() %}\n'
+		~ data.whitespace
+		~ '{{ myAsset.url }}\n{% endfor %}'
+	)}}
+
+
+	{{ macros.codeBlock('Only return the first asset', '
+		{% set myAsset = '
+		~ data.sampleTag
+		~ '.one() %}\n{% if myAsset %}\n'
+		~ data.whitespace
+		~ '{{ myAsset.url }}\n{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Adjusting the limit', '
+		{% for myAsset in ' ~ data.sampleTag ~ '.limit(5).all() %}'
+	)}}
+
+
+	{{ macros.codeBlock('All asset variables', '
+		{% set myAsset = '
+		~ data.sampleTag
+		~ '.one() %}\n{% if myAsset %}\n'
+		~ data.whitespace
+		~ '{{ myAsset.dateCreated }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.dateUpdated }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.extension }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.filename }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.folder }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.folderId }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.height }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.id }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.img }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.kind }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.locale }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.link }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.mimeType }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.next }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.prev }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.size }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.volume }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.volumeId }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.url }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.width }}\n{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('All asset methods', '
+		{% set myAsset = '
+		~ data.sampleTag
+		~ '.one() %}\n{% if myAsset %}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getExtension() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getFolder() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getHeight( transform ) }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getImg() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getLink() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getMimeType() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getNext( params ) }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getPrev( params ) }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getSource() }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getUrl( transform ) }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.getWidth( transform ) }}\n'
+		~ data.whitespace
+		~ '{{ myAsset.setTransform( transform ) }}\n{% endif %}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_Categories(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Check if entry has categories', '
+		{% if ' ~ data.sampleTag ~ '.exists() %}\n'
+		~ data.whitespace ~ '...\n'
+		~ '{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Rename for easier access', '
+		{% set categories = '
+		~ data.sampleTag
+		~ '.all() %}\n'
+		~ '{% if categories|length %}\n'
+		~ data.whitespace ~ '<h3>My Categories<h3/>\n'
+		~ data.whitespace
+		~ '{% nav myCategory in categories %}\n'
+		~ data.whitespace ~ data.whitespace ~ '...\n'
+		~ data.whitespace ~ '{% endnav %}\n'
+		~ '{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Pass parameters to the category query', '
+		{% set myCategories = ' ~ data.sampleTag ~ '.order(\'name\').all() %}'
+	)}}
+
+
+	{{ macros.codeBlock('Select just the first category', '
+		{% set myCategory = '
+		~ data.sampleTag
+		~ '.one() %}\n'
+		~ '{% if myCategory %}\n'
+		~ data.whitespace ~ '...\n'
+		~ '{% endif %}'
+	, 'This is mostly used in a scenario where you only expect one category to be selected. The result is still a "set" of categories so we just grab the first one.')}}
+
+{% endmacro -%}
+
+{%- macro cs_Checkboxes(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Field name', '
+		{{ ' ~ data.sampleTag ~ ' }}'
+	)}}
+
+
+	{{ macros.codeBlock('Single checkbox conditional', '
+		{% if ' ~ data.sampleTag ~ '|length %} ... {% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through the <em>selected</em> options', '
+		<ul>\n'
+		~ data.whitespace ~ '{% for option in '
+		~ data.sampleTag
+		~ ' %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '<li>{{ option }}</li>\n'
+		~ data.whitespace
+		~ '{% endfor %}\n'
+		~ '</ul>'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through <em>all</em> of the options', '
+		<ul>\n'
+		~ data.whitespace ~ '{% for option in '
+		~ data.sampleTag
+		~ '.options %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '<li>{{ option }}</li>\n'
+		~ data.whitespace
+		~ '{% endfor %}\n'
+		~ '</ul>'
+	)}}
+
+
+	{{ macros.codeBlock('See if a specific option is selected', '
+		{% if '
+		~ data.sampleTag
+		~ '.contains(\'value\') %}\n'
+		~ data.whitespace
+		~ '...\n'
+		~ '{% endif %}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_Color(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Field name', '
+		{{ ' ~ data.sampleTag ~ ' }}'
+	)}}
+
+	{{ macros.codeBlock('If exists" conditional', '
+		{% if ' ~ data.sampleTag ~ ' %} ... {% endif %}'
+	)}}
+
+	{{ macros.codeBlock('Adding to page style rules', '
+		{% if '
+		~ data.sampleTag
+		~ ' %}\n'
+		~ data.whitespace
+		~ '<style type="text/css">\n'
+		~ data.whitespace ~ data.whitespace
+		~ '.content a {\n'
+		~ data.whitespace ~ data.whitespace ~ data.whitespace
+		~ 'color: {{ '
+		~ data.sampleTag
+		~ '.getHex() }};\n'
+		~ data.whitespace ~ data.whitespace
+		~ '}\n'
+		~ data.whitespace
+		~ '</style>\n'
+		~ '{% endif %}'
+	)}}
+
+	{{ macros.codeBlock('As rgb() syntax', '
+		{{ ' ~ data.sampleTag ~ '.rgb }}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_Date(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Sample date formatting', '
+		{% if ' ~ data.sampleTag ~ ' %}\n'
+		~ data.whitespace
+		~ '{{ ' ~ data.sampleTag ~ ' | date(\'M j, Y\') }}\n'
+		~ '{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Get the Unix timestamp of the date', '
+		{{ ' ~ data.sampleTag ~ '.getTimestamp() }}'
+	)}}
+
+	<div class="extra">
+		<p>There are many methods you can use on date fields. More documentation available <a href="http://buildwithcraft.com/docs/templating/datetime">here</a>.</p>
+	</div>
+
+{% endmacro -%}
+
+{%- macro cs_Dropdown(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Field name', '
+		{{ ' ~ data.sampleTag ~ ' }}'
+	)}}
+
+
+	{{ macros.codeBlock('Field label', '
+		{{ ' ~ data.sampleTag ~ '.label }}'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through the options', '
+		<ul>\n'
+		~ data.whitespace
+		~ '{% for option in '
+		~ data.sampleTag
+		~ '.options %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '<li>{{ option }}</li>\n'
+		~ data.whitespace
+		~ '{% endfor %}\n</ul>'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_Email(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Field name', '
+		{{ ' ~ data.sampleTag ~ ' }}'
+	)}}
+
+	{{ macros.codeBlock('"If exists" conditional', '
+		{% if ' ~ data.sampleTag ~ ' %} ... {% endif %}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_Entries(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Set your entries to a variable', '
+		{% set entries = ' ~ data.sampleTag ~ ' %}'
+	)}}
+
+
+	{{ macros.codeBlock('Does your entries field have any entries?', '
+		{% if '
+		~ data.sampleTag
+		~ '.exists() %}\n'
+		~ data.whitespace
+		~ '...\n'
+		~ '{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('A simple loop for your entries', '
+		{% for myEntry in '
+		~ data.sampleTag
+		~ '.all() %}\n'
+		~ data.whitespace
+		~ '...\n'
+		~ '{% endfor %}'
+	)}}
+
+
+	{{ macros.codeBlock('Set variable, check for entries, then loop through them', '
+		{% set entries = '
+		~ data.sampleTag
+		~ '.all() %}\n'
+		~ '{% if entries|length %}\n'
+		~ data.whitespace
+		~ '<h3>List of Entries</h3>\n'
+		~ data.whitespace
+		~ '{% for myEntry in entries %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '...\n'
+		~ data.whitespace
+		~ '{% endfor %}\n'
+		~ '{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Just grab the first entry', '
+		{% set myEntry = '
+		~ data.sampleTag
+		~ '.one() %}\n'
+		~ '{% if myEntry %}\n'
+		~ data.whitespace
+		~ '...\n'
+		~ '{% endif %}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_Lightswitch(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Boolean Conditional', '
+		{% if ' ~ data.sampleTag ~ ' %} ... {% endif %}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_Matrix(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Total number of blocks', '
+		{{ ' ~ data.sampleTag ~ '.count() }}'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through blocks', '
+		{% for block in ' ~ data.sampleTag ~ '.all() %}\n'
+		~ data.whitespace ~ '...\n{'
+		~ '% endfor %}'
+	)}}
+
+
+	{{ macros.codeBlock('Filtering by block type', '
+		{% for block in ' ~ data.sampleTag ~ '.type(\'text\').all() %}'
+	)}}
+
+
+	{{ macros.codeBlock('Adjusting the limit', '
+		{% for block in ' ~ data.sampleTag ~ '.limit(5).all() %}'
+	)}}
+
+
+	{#
+	   We need to pass a single string through the next .codeBlock macro
+	   so we're going to build our list of blocks and tags before
+	   we build out the full code snippet string to pass through
+	#}
+	{%- set blockCode -%}
+
+		{%- for blockType in data.field.getBlockTypes() -%}
+
+			{%- set blockFieldCode -%}
+
+				{%- for matrixField in blockType.getFields() -%}
+					{{-
+						data.whitespace ~ data.whitespace ~ data.whitespace
+						~ '{{ block.' ~ matrixField.handle ~ ' }} '
+						~ '{# Type: ' ~ matrixField.displayName ~ ' #}\n'
+					-}}
+				{%- endfor -%}
+
+			{%- endset -%}
+
+			{{-
+				data.whitespace ~ data.whitespace
+				~ '{% case "' ~ blockType.handle ~ '" %}\n'
+				~ blockFieldCode
+				~ '\n'
+			-}}
+
+		{%- endfor -%}
+
+	{%- endset -%}
+
+
+	{{ macros.codeBlock('All block types with fields', '
+		{% for block in ' ~ data.sampleTag ~ '.all() %}\n'
+		~ data.whitespace ~ '{% switch block.type %}\n\n'
+		~ blockCode
+		~ data.whitespace ~ data.whitespace
+		~ '{% default %}\n'
+		~ data.whitespace ~ data.whitespace ~ data.whitespace
+		~ '...\n\n'
+		~ data.whitespace
+		~ '{% endswitch %}\n'
+		~ '{% endfor %}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_MultiSelect(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Loop through the <em>selected</em> options', '
+		<ul>\n'
+		~ data.whitespace ~ '{% for option in '
+		~ data.sampleTag
+		~ ' %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '<li>{{ option }}</li>\n'
+		~ data.whitespace
+		~ '{% endfor %}\n'
+		~ '</ul>'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through <em>all</em> of the options', '
+		<ul>\n'
+		~ data.whitespace ~ '{% for option in '
+		~ data.sampleTag
+		~ '.options %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '<li>{{ option }}</li>\n'
+		~ data.whitespace
+		~ '{% endfor %}\n'
+		~ '</ul>'
+	)}}
+
+
+	{{ macros.codeBlock('See if a specific option is selected', '
+		{% if '
+		~ data.sampleTag
+		~ '.contains(\'value\') %}\n'
+		~ data.whitespace
+		~ '...\n'
+		~ '{% endif %}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_Number(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Field name', '
+		{{ ' ~ data.sampleTag ~ ' }}'
+	)}}
+
+
+	{{ macros.codeBlock('Comparison conditional</td>', '
+		{% if ' ~ data.sampleTag ~ ' > 0 %} ... {% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Operations', '
+		{% set myResult = 42 * ' ~ data.sampleTag ~ ' %}'
+		~ '\n\nThe total is {{ myResult }}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_PlainText(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Field name', '
+		{{ ' ~ data.sampleTag ~ ' }}'
+	)}}
+
+	{{ macros.codeBlock('"If exists" conditional', '
+		{% if ' ~ data.sampleTag ~ ' %} ... {% endif %}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_PositionSelect(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Adding to a class name', '
+		<div class="block {{ ' ~ data.sampleTag ~ ' }}">'
+	)}}
+
+
+	{{ macros.codeBlock('Conditionals around position values', '
+		{% if '
+		~ data.sampleTag
+		~ ' in [\'left\', \'right\'] %}\n'
+		~ data.whitespace
+		~ '{# ... #}\n'
+		~ '{% elseif '
+		~ data.sampleTag
+		~ ' == \'center\' %}\n'
+		~ data.whitespace
+		~ '{# ... #}\n'
+		~ '{% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Switch statement for all values', '
+		{% switch '
+		~ data.sampleTag
+		~ ' %}\n'
+		~ data.whitespace
+		~ '{% case \'left\' %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '{# ... #}\n'
+		~ data.whitespace
+		~ '{% case \'center\' %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '{# ... #}\n'
+		~ data.whitespace
+		~ '{% case \'right\' %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '{# ... #}\n'
+		~ data.whitespace
+		~ '{% case \'full\' %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '{# ... #}\n'
+		~ data.whitespace
+		~ '{% case \'drop-left\' %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '{# ... #}\n'
+		~ data.whitespace
+		~ '{% case \'drop-right\' %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '{# ... #}\n'
+		~ '{% endswitch %}'
+	)}}
+
+{% endmacro  -%}
+
+{%- macro cs_RadioButtons(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('The Selected value\'s option', '
+		{{ ' ~ data.sampleTag ~ ' }}'
+	)}}
+
+
+	{{ macros.codeBlock('The Selected value\'s label', '
+		{{ ' ~ data.sampleTag ~ '.label }}'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through all available options', '
+		<ul>\n'
+		~ data.whitespace ~ '{% for option in '
+		~ data.sampleTag
+		~ '.options %}\n'
+		~ data.whitespace ~ data.whitespace
+		~ '<li>{{ option }}</li>\n'
+		~ data.whitespace
+		~ '{% endfor %}\n'
+		~ '</ul>'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_Redactor(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Field name', '
+		{{ ' ~ data.sampleTag ~ ' }}'
+	)}}
+
+	{{ macros.codeBlock('"If exists" conditional', '
+		{% if ' ~ data.sampleTag ~ ' %} ... {% endif %}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_RichText(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Field name', '
+		{{ ' ~ data.sampleTag ~ ' }}'
+	)}}
+
+	{{ macros.codeBlock('"If exists" conditional', '
+		{% if ' ~ data.sampleTag ~ '|length %} ... {% endif %}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_SmartMap_Address(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Individual address fields', '
+		{{ ' ~ data.sampleTag ~ '.street1 }}\n'
+		~ '{{ ' ~ data.sampleTag ~ '.street2 }}\n'
+		~ '{{ ' ~ data.sampleTag ~ '.city }}\n'
+		~ '{{ ' ~ data.sampleTag ~ '.state }}\n'
+		~ '{{ ' ~ data.sampleTag ~ '.zip }}\n\n'
+		~ 'Latitude: {{ ' ~ data.sampleTag ~ '.lat }}\n'
+		~ 'Longitude: {{ ' ~ data.sampleTag ~ '.lng }}\n\n'
+		~ '{# Only available in proximity search results #}\n'
+		~ 'Found {{ ' ~ data.sampleTag ~ '.distance | number_format(1) }} miles away.\n'
+	)}}
+
+	{{ macros.codeBlock('Combined address output', '
+		{# On 3 lines #}\n'
+		~ '{{ '
+		~ data.sampleTag ~ '.format'
+		~ ' }}\n\n'
+		~ '{# On 2 lines #}\n'
+		~ '{{ '
+		~ data.sampleTag ~ '.format(true)'
+		~ ' }}\n\n'
+		~ '{# On 1 line #}\n'
+		~ '{{ '
+		~ data.sampleTag ~ '.format(true, true)'
+		~ ' }}'
+	)}}
+
+	{{ macros.codeBlock('"If address is not empty" conditional', '
+		{% if not ' ~ data.sampleTag ~ '.isEmpty %} ... {% endif %}'
+	)}}
+
+	{{ macros.codeBlock('"If address has coordinates" conditional', '
+		{% if ' ~ data.sampleTag ~ '.hasCoords %} ... {% endif %}'
+	)}}
+
+	<div class="extra">
+		<p>These code examples cover the basic ways to directly output address data. If you'd like to render a map (or do even more complex stuff with your address data), please visit the full documentation at <a href="https://craftpl.us/plugins/smart-map/" target="_blank">Craft Plus</a>.</p>
+	</div>
+
+{% endmacro -%}
+
+{%- macro cs_Table(data) %}
+	{% import _self as macros %}
+
+	{#
+	   Some whitespace setup code so we can use the previously defined
+	   macro to verticaly align comments in code using strRepeat
+	#}
+	{%- set rowWhitespace = [] -%}
+	{%- for col in data.field.settings.columns -%}
+		{%- set rowWhitespace = rowWhitespace|merge([col.handle|length]) -%}
+	{%- endfor -%}
+
+
+	{#
+	   We need to pass a single string through the .codeBlock macro
+	   so we're going to build our list of column names and tags before
+	   we build out the full code snippet string to pass through
+	#}
+	{%- set rowBlock -%}
+	{%- for col in data.field.settings.columns -%}
+		{{-
+			data.whitespace ~ data.whitespace
+			~ '{{ row.' ~ col.handle ~ ' }} '
+			~ macros.strRepeat(' ', max(rowWhitespace) - col.handle|length)
+			~ '{# ' ~ col.type ~ ' #}\n'
+		-}}
+	{%- endfor -%}
+	{%- endset -%}
+
+
+	{{ macros.codeBlock('Table Structure', '
+		{% if ' ~ data.sampleTag ~ '|length %}\n'
+		~ data.whitespace
+		~ '{% for row in ' ~ data.sampleTag ~ ' %}\n'
+		~ rowBlock
+		~ data.whitespace
+		~ '{% endfor %}\n'
+		~ '{% endif %}'
+	, 'This the general structure of the table and column handles (and types). If there are any default row values they will are displayed below this structure code block.')}}
+
+
+	{% if data.field.settings.defaults %}
+	<h3>Default Values</h3>
+	<div class="table_contain">
+		<table>
+			<thead>
+				<tr>
+					<th>Row #</th>
+					{%- for col in data.field.settings.columns -%}
+					<th>{{ col.heading }}</th>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tbody>
+				{%- for row, cols in data.field.settings.defaults -%}
+				<tr>
+					<td>{{ loop.index }}</td>
+					{%- for colId, col in cols -%}
+						{%- switch data.field.settings.columns[colId].type -%}
+							{%- case 'checkbox' or 'lightswitch' -%}
+								<td><code>{{ col ? 'true' : 'false' }}</code></td>
+							{%- case 'color' -%}
+								<td><code>{{ col }}</code></td>
+							{%- case 'date' -%}
+								<td>{{ col ? col|date('short') }}</td>
+							{%- case 'time' -%}
+								<td>{{ col ? col|time('short') }}</td>
+							{%- default -%}
+								<td>{{ col|nl2br }}</td>
+						{%- endswitch -%}
+					{%- endfor -%}
+				</tr>
+				{%- endfor -%}
+			</tbody>
+		</table>
+	</div>
+	{% endif %}
+
+{% endmacro -%}
+
+{%- macro cs_Tags(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Set a variable for future template use', '
+		{% set myTags = ' ~ data.sampleTag ~ ' %}'
+	)}}
+
+
+	{{ macros.codeBlock('Check if any tags exist', '
+		{% if ' ~ data.sampleTag ~ '.exists() %} ... {% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through the selected tags', '
+		{% for myTag in '
+		~ data.sampleTag
+		~ '.all() %}\n'
+		~ data.whitespace
+		~ '...\n'
+		~ '{% endfor %}'
+	)}}
+
+
+	{{ macros.codeBlock('Order by parameters', '
+		{% set myTags = ' ~ data.sampleTag ~ '.order(\'title\').all() %}'
+	)}}
+
+
+	{{ macros.codeBlock('Avoid a loop if your field limits to 1 tag', '
+		{% if '
+		~ data.sampleTag
+		~ '.one() %}\n'
+		~ data.whitespace
+		~ '...\n'
+		~ '{% endif %}'
+	)}}
+
+{% endmacro -%}
+
+{%- macro cs_Users(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Set a variable for future template use', '
+		{% set myUsers = ' ~ data.sampleTag ~ ' %}'
+	)}}
+
+
+	{{ macros.codeBlock('Check if any users were selected', '
+		{% if ' ~ data.sampleTag ~ '.exists() %} ... {% endif %}'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through the selected users', '
+		{% for myUser in '
+		~ data.sampleTag
+		~ '.all() %}\n'
+		~ data.whitespace
+		~ '...\n'
+		~ '{% endfor %}'
+	)}}
+
+
+	{{ macros.codeBlock('Filter by parameters', '
+		{% set authors = ' ~ data.sampleTag ~ '.group(\'groupName\').all() %}'
+	)}}
+
+
+	{{ macros.codeBlock('Avoid a loop if your field limits to 1 user', '
+		{% set myUser = '
+		~ data.sampleTag
+		~ '.one() %}\n'
+		~ '{% if myUser %}\n'
+		~ data.whitespace
+		~ '...\n'
+		~ '{% endif %}'
+	)}}
+
+{% endmacro -%}

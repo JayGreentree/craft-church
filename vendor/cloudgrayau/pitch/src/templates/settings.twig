@@ -1,0 +1,58 @@
+{% import "_includes/forms" as forms %}
+<div id="settings">
+{{ forms.selectField({
+    label: "SCSS Output Style",
+    instructions: "The output style for your compiled SCSS files.",
+    name: 'cssFormat',
+    options: [{label: 'Expanded', value: 'Expanded'},{label: 'Compressed', value: 'Compressed'}],
+    value: settings['cssFormat'],
+    required: true,
+}) }}
+{{ forms.lightswitchField({
+    label: "Enable Minification",
+    instructions: "Whether CSS/JS minification should be enabled.",
+    name: 'minifyFiles',
+    on: settings.minifyFiles,
+}) }}
+{{ forms.lightswitchField({
+    label: "Enable Cache",
+    instructions: "Whether caching should be enabled.",
+    name: 'useCache',
+    on: settings.useCache,
+}) }}
+{{ forms.lightswitchField({
+    label: "Enable Advanced Caching",
+    instructions: "Whether advanced caching should be enabled. Offers superior performance but requires <a href=\"https://github.com/cloudgrayau/pitch/blob/main/ADVANCED.md\" target=\"_blank\">server rewrites</a> and changes to the <a href=\"https://github.com/cloudgrayau/pitch/blob/main/ADVANCED.md\" target=\"_blank\">default storage path</a>.<br /><em>Recommended for use in production environments. This setting is ignored if 'Enable Cache' is disabled.</em>",
+    name: 'advancedCache',
+    on: settings.advancedCache,
+}) }}
+{{ forms.autosuggestField({
+    label: "Cache Storage Path",
+    instructions: "The path to your cache folder.<br /><em>'Enable Advanced Caching' requires the storage path to be set to a public location, for example '@webroot/pitch'.</em>",
+    suggestEnvVars: true,
+    suggestAliases: true,
+    name: 'cacheDir',
+    value: settings['cacheDir'],
+    placeholder: '@storage/pitch',
+    required: false,
+}) }}
+{{ forms.textField({
+    label: "Cache duration",
+    instructions: "The total amount of seconds to cache files.<br /><em>This setting is ignored if 'Enable Advanced Caching' is enabled and setup correctly.</em>",
+    name: 'cacheDuration',
+    value: settings['cacheDuration'],
+    placeholder: 2592000,
+    type: 'number',
+    min: 0,
+}) }}
+  <div data-js="clear-button">
+    <a data-js="clear-cache" class="btn submit">Clear Cache</a>
+  </div>
+</div>
+{% js %}
+$(document).ready(function() { 
+  $(document).on('click', '[data-js="clear-cache"]', function() {
+    window.location.href = '{{ cpUrl('pitch/clear') }}';
+  });
+});
+{% endjs %}

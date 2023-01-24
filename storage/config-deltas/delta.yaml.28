@@ -1,0 +1,36 @@
+dateApplied: '2022-12-15 22:50:46'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1671173382
+        to: 1671173446
+  -
+    added:
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.decimals: 0
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.defaultValue: null
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.max: null
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.min: 0
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.prefix: null
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.previewCurrency: null
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.previewFormat: none
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.size: null
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.suffix: null
+    removed:
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.byteLimit: null
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.charLimit: null
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.code: false
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.columnType: null
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.initialRows: 4
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.multiline: false
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.placeholder: null
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.settings.uiMode: enlarged
+    message: 'Save field “intro_video_id”'
+    changed:
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.contentColumnType:
+        from: text
+        to: integer(10)
+      fields.659535b6-6f74-4104-aa31-bc2a1c1efb94.type:
+        from: craft\fields\PlainText
+        to: craft\fields\Number

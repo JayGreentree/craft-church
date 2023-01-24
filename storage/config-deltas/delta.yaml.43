@@ -1,0 +1,29 @@
+dateApplied: '2022-12-15 22:25:23'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1671171764
+        to: 1671171923
+  -
+    added:
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.maxLength: 255
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.types.0: url
+    removed:
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.byteLimit: null
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.charLimit: null
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.code: false
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.columnType: null
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.initialRows: 4
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.multiline: false
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.placeholder: null
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.uiMode: normal
+    message: 'Save field “studyNotesLink”'
+    changed:
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.contentColumnType:
+        from: text
+        to: string(255)
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.type:
+        from: craft\fields\PlainText
+        to: craft\fields\Url

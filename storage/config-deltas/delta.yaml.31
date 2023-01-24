@@ -1,0 +1,54 @@
+dateApplied: '2022-12-15 22:46:22'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1671173039
+        to: 1671173181
+  -
+    added:
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.columnSuffix: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.contentColumnType: string
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.fieldGroup: 65ee6975-465c-4135-a6e5-a45ce81a6535
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.handle: backgroundImage
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.instructions: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.name: 'Background Image'
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.searchable: false
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.allowSelfRelations: false
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.allowSubfolders: false
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.allowUploads: true
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.allowedKinds: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.defaultUploadLocationSource: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.defaultUploadLocationSubpath: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.localizeRelations: false
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.maxRelations: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.minRelations: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.previewMode: full
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.restrictFiles: false
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.restrictLocation: false
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.restrictedDefaultUploadSubpath: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.restrictedLocationSource: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.restrictedLocationSubpath: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.selectionCondition.__assoc__.0.0: elementType
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.selectionCondition.__assoc__.0.1: craft\elements\Asset
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.selectionCondition.__assoc__.1.0: fieldContext
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.selectionCondition.__assoc__.1.1: global
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.selectionCondition.__assoc__.2.0: class
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.selectionCondition.__assoc__.2.1: craft\elements\conditions\assets\AssetCondition
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.selectionLabel: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.showSiteMenu: false
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.showUnpermittedFiles: false
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.showUnpermittedVolumes: false
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.source: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.sources: '*'
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.targetSiteId: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.validateRelatedElements: false
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.settings.viewMode: list
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.translationKeyFormat: null
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.translationMethod: site
+      fields.ce2803f0-5fa6-4658-8a5c-eca763ee474c.type: craft\fields\Assets
+    message: 'Save field “backgroundImage”'
+  -
+    added:
+      meta.__names__.ce2803f0-5fa6-4658-8a5c-eca763ee474c: 'Background Image'

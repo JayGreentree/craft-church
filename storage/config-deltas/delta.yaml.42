@@ -1,0 +1,26 @@
+dateApplied: '2022-12-15 22:26:11'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1671171923
+        to: 1671171970
+  -
+    added:
+      fields.23969af4-c481-4cee-b31b-9adc98715631.columnSuffix: gmkznmew
+      fields.23969af4-c481-4cee-b31b-9adc98715631.contentColumnType: string(255)
+      fields.23969af4-c481-4cee-b31b-9adc98715631.fieldGroup: cabf5db1-8ddc-4576-b387-39d4366462cd
+      fields.23969af4-c481-4cee-b31b-9adc98715631.handle: videoLink
+      fields.23969af4-c481-4cee-b31b-9adc98715631.instructions: null
+      fields.23969af4-c481-4cee-b31b-9adc98715631.name: 'Video Link'
+      fields.23969af4-c481-4cee-b31b-9adc98715631.searchable: false
+      fields.23969af4-c481-4cee-b31b-9adc98715631.settings.maxLength: 255
+      fields.23969af4-c481-4cee-b31b-9adc98715631.settings.types.0: url
+      fields.23969af4-c481-4cee-b31b-9adc98715631.translationKeyFormat: null
+      fields.23969af4-c481-4cee-b31b-9adc98715631.translationMethod: none
+      fields.23969af4-c481-4cee-b31b-9adc98715631.type: craft\fields\Url
+    message: 'Save field “videoLink”'
+  -
+    added:
+      meta.__names__.23969af4-c481-4cee-b31b-9adc98715631: 'Video Link'

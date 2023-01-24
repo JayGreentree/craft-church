@@ -1,0 +1,72 @@
+{%- macro cs_Matrix(data) %}
+	{% import _self as macros %}
+
+	{{ macros.codeBlock('Total number of blocks', '
+		{{ ' ~ data.sampleTag ~ '.count() }}'
+	)}}
+
+
+	{{ macros.codeBlock('Loop through blocks', '
+		{% for block in ' ~ data.sampleTag ~ '.all() %}\n'
+		~ data.whitespace ~ '...\n{'
+		~ '% endfor %}'
+	)}}
+
+
+	{{ macros.codeBlock('Filtering by block type', '
+		{% for block in ' ~ data.sampleTag ~ '.type(\'text\').all() %}'
+	)}}
+
+
+	{{ macros.codeBlock('Adjusting the limit', '
+		{% for block in ' ~ data.sampleTag ~ '.limit(5).all() %}'
+	)}}
+
+
+	{#
+	   We need to pass a single string through the next .codeBlock macro
+	   so we're going to build our list of blocks and tags before
+	   we build out the full code snippet string to pass through
+	#}
+	{%- set blockCode -%}
+
+		{%- for blockType in data.field.getBlockTypes() -%}
+
+			{%- set blockFieldCode -%}
+
+				{%- for matrixField in blockType.getFields() -%}
+					{{-
+						data.whitespace ~ data.whitespace ~ data.whitespace
+						~ '{{ block.' ~ matrixField.handle ~ ' }} '
+						~ '{# Type: ' ~ matrixField.displayName ~ ' #}\n'
+					-}}
+				{%- endfor -%}
+
+			{%- endset -%}
+
+			{{-
+				data.whitespace ~ data.whitespace
+				~ '{% case "' ~ blockType.handle ~ '" %}\n'
+				~ blockFieldCode
+				~ '\n'
+			-}}
+
+		{%- endfor -%}
+
+	{%- endset -%}
+
+
+	{{ macros.codeBlock('All block types with fields', '
+		{% for block in ' ~ data.sampleTag ~ '.all() %}\n'
+		~ data.whitespace ~ '{% switch block.type %}\n\n'
+		~ blockCode
+		~ data.whitespace ~ data.whitespace
+		~ '{% default %}\n'
+		~ data.whitespace ~ data.whitespace ~ data.whitespace
+		~ '...\n\n'
+		~ data.whitespace
+		~ '{% endswitch %}\n'
+		~ '{% endfor %}'
+	)}}
+
+{% endmacro -%}

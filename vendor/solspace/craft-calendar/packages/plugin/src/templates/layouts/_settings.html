@@ -1,0 +1,43 @@
+{% extends "calendar/layouts/_layoutWithoutSettings" %}
+
+{% set selectedSubnavItem = 'settings' %}
+{% set fullPageForm = true %}
+
+{% set navItems = {
+'hd': { heading: "Settings"|t('calendar') },
+'general': { title: "General Settings"|t('calendar') },
+'events': { title: "Event Settings"|t('calendar') },
+'guest-access': { title: "Guest Access"|t('calendar') },
+'demo-templates': {title: 'Demo Templates'|t('calendar')},
+} %}
+
+{% set selectedItem = craft.app.request.getSegment(3)|default %}
+
+{% set crumbs = [
+    { label: craft.calendar.name, url: url("calendar") },
+    { label: "Settings"|t("calendar"), url: url("calendar/settings") },
+] %}
+
+{% set docTitle = navItems[selectedItem].title~' - '~title %}
+
+{% block actionButton %}
+    <div class="buttons">
+        <div class="btngroup submit">
+            <input type="submit" class="btn submit" value="{{ 'Save'|t('calendar') }}">
+        </div>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    <nav>
+        <ul>
+            {% for id, item in navItems %}
+                {% if item.heading is defined %}
+                    <li class="heading"><span>{{ item.heading }}</span></li>
+                {% else %}
+                    <li><a href="{{ url('calendar/settings/'~id) }}"{% if id == selectedItem %} class="sel"{% endif %}>{{ item.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+{% endblock %}

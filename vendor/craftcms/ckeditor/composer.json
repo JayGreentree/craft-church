@@ -1,0 +1,62 @@
+{
+  "name": "craftcms/ckeditor",
+  "description": "Edit rich text content in Craft CMS using CKEditor.",
+  "type": "craft-plugin",
+  "keywords": [
+    "html",
+    "cms",
+    "craftcms",
+    "ckeditor",
+    "yii2"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pixel & Tonic",
+      "homepage": "https://pixelandtonic.com/"
+    }
+  ],
+  "support": {
+    "email": "support@craftcms.com",
+    "issues": "https://github.com/craftcms/ckeditor/issues?state=open",
+    "source": "https://github.com/craftcms/ckeditor",
+    "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
+    "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.0.2",
+    "craftcms/cms": "^4.0.0-alpha.1",
+    "craftcms/html-field": "^2.0.0-alpha.2"
+  },
+  "require-dev": {
+    "craftcms/ecs": "dev-main",
+    "craftcms/phpstan": "dev-main",
+    "craftcms/rector": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "craft\\ckeditor\\": "src/"
+    }
+  },
+  "scripts": {
+    "check-cs": "ecs check --ansi",
+    "fix-cs": "ecs check --ansi --fix",
+    "phpstan": "phpstan --memory-limit=1G"
+  },
+  "extra": {
+    "name": "CKEditor",
+    "handle": "ckeditor",
+    "documentationUrl": "https://github.com/craftcms/ckeditor/blob/master/README.md"
+  },
+  "config": {
+    "platform": {
+      "php": "8.0.2"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}

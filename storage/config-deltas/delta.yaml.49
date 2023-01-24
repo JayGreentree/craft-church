@@ -1,0 +1,32 @@
+dateApplied: '2022-12-15 22:15:39'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1671171239
+        to: 1671171339
+  -
+    added:
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.columnSuffix: xmebpuze
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.contentColumnType: text
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.fieldGroup: cabf5db1-8ddc-4576-b387-39d4366462cd
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.handle: speaker
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.instructions: null
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.name: Speaker
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.searchable: false
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.settings.byteLimit: null
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.settings.charLimit: null
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.settings.code: true
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.settings.columnType: null
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.settings.initialRows: 4
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.settings.multiline: false
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.settings.placeholder: null
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.settings.uiMode: normal
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.translationKeyFormat: null
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.translationMethod: none
+      fields.d7a01f4a-4b95-4388-9ebf-2da5384373bd.type: craft\fields\PlainText
+    message: 'Save field “speaker”'
+  -
+    added:
+      meta.__names__.d7a01f4a-4b95-4388-9ebf-2da5384373bd: Speaker

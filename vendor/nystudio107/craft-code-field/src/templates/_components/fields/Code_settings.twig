@@ -1,0 +1,144 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Code Field plugin for Craft CMS
+ *
+ * Code Field Settings
+ *
+ * @author    nystudio107
+ * @copyright Copyright (c) 2022 nystudio107
+ * @link      https://nystudio107.com
+ * @package   CodeField
+ * @since     4.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+{% import "codeeditor/codeEditor" as codeEditor %}
+
+{{ forms.selectField({
+    label: "Code Field Theme"|t("codefield"),
+    instructions: "The theme to use for the Code Field editor."|t("codefield"),
+    id: "theme",
+    name: "theme",
+    value: field.theme,
+    options: [
+        { value: "auto", label: "Auto"|t("codefield") },
+        { value: "vs", label: "Visual Studio Light"|t("codefield") },
+        { value: "vs-dark", label: "Visual Studio Dark"|t("codefield") },
+        { value: "hc-black", label: "High Contrast Dark"|t("codefield") },
+    ],
+    errors: field.getErrors("theme")
+}) }}
+
+{{ forms.selectField({
+    label: "Code Field Default Language"|t("codefield"),
+    instructions: "The language to use for the Code Field editor."|t("codefield"),
+    id: "language",
+    name: "language",
+    value: field.language,
+    options: monacoLanguages,
+    errors: field.getErrors("language")
+}) }}
+
+{{ forms.selectField({
+    label: "Font Size"|t("codefield"),
+    instructions: "The font size to use for the Code Field editor."|t("codefield"),
+    id: "fontSize",
+    name: "fontSize",
+    value: field.fontSize,
+    options: [
+        {value: 6, label: "6"},
+        {value: 7, label: "7"},
+        {value: 8, label: "8"},
+        {value: 9, label: "9"},
+        {value: 10, label: "10"},
+        {value: 11, label: "11"},
+        {value: 12, label: "12"},
+        {value: 13, label: "13"},
+        {value: 14, label: "14"},
+        {value: 15, label: "15"},
+        {value: 16, label: "16"},
+        {value: 17, label: "17"},
+        {value: 18, label: "18"},
+        {value: 19, label: "19"},
+        {value: 20, label: "20"},
+        {value: 21, label: "21"},
+        {value: 22, label: "22"},
+        {value: 23, label: "23"},
+        {value: 24, label: "24"},
+    ],
+    errors: field.getErrors("fontSize")
+}) }}
+
+{{ forms.checkboxField({
+    label: "Single Line Code Field"|t("codefield"),
+    id: "singleLineEditor",
+    name: "singleLineEditor",
+    checked: field.singleLineEditor,
+    reverseToggle: "codeDisplayOptions",
+    errors: field.getErrors("singleLineEditor")
+}) }}
+
+<div id="codeDisplayOptions" class="{% if not field.singleLineEditor %}hidden{% endif %}">
+    {{ forms.checkboxField({
+        label: "Line Numbers"|t("codefield"),
+        id: "lineNumbers",
+        name: "lineNumbers",
+        checked: field.lineNumbers,
+        errors: field.getErrors("lineNumbers")
+    }) }}
+
+    {{ forms.checkboxField({
+        label: "Code Folding"|t("codefield"),
+        id: "codeFolding",
+        name: "codeFolding",
+        checked: field.codeFolding,
+        errors: field.getErrors("codeFolding")
+    }) }}
+</div>
+
+{{ forms.textField({
+    label: "Placeholder Text"|t("codefield"),
+    instructions: "The text that will be shown if the code field is empty."|t("codefield"),
+    id: "placeholder",
+    name: "placeholder",
+    value: field.placeholder,
+    errors: field.getErrors("placeholder")
+}) }}
+
+{{ forms.checkboxField({
+    label: "Show Language Dropdown with Field"|t("codefield"),
+    id: "showLanguageDropdown",
+    name: "showLanguageDropdown",
+    checked: field.showLanguageDropdown,
+    errors: field.getErrors("showLanguageDropdown")
+}) }}
+
+<hr>
+
+<a class="fieldtoggle" data-target="availableLanguagesListWrapper">{{ "Available Languages"|t("codefield") }}</a>
+<div id="availableLanguagesListWrapper" class="nested-fields hidden">
+    {{ forms.checkboxSelectField({
+        label: "Available Languages"|t("codefield"),
+        instructions: "The languages that should be listed in the language selector dropdown menu."|t("codefield"),
+        id: "availableLanguages",
+        name: "availableLanguages",
+        values: field.availableLanguages,
+        options: monacoLanguages,
+        showAllOption: true,
+        errors: field.getErrors("availableLanguages")
+    }) }}
+</div>
+
+<a class="fieldtoggle" data-target="advanced">{{ "Advanced"|t("app") }}</a>
+<div id="advanced" class="{% if not field.getErrors("monacoEditorOptions") %}hidden{% endif %}">
+    {{ codeEditor.textAreaField({
+        label: "Monaco Editor Settings Override"|t("codefield"),
+        instructions: "JSON blob of Monaco [EditorOptions](https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.IEditorOptions.html) that will override the default settings."|t("codefield"),
+        id: "monacoEditorOptions",
+        name: "monacoEditorOptions",
+        value: field.monacoEditorOptions,
+        errors: field.getErrors("monacoEditorOptions")
+    }, "CodeField", {language: "json"}, {wrapperClass: "monaco-editor-background-frame"}) }}
+</div>

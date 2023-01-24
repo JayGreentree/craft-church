@@ -1,0 +1,5 @@
+// No need to commit these directories or files
+.sass-cache/
+node_modules/
+.DS_Store
+/.idea

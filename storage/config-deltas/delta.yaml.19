@@ -1,0 +1,36 @@
+dateApplied: '2022-12-15 23:07:21'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1671174350
+        to: 1671174441
+  -
+    added:
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.columnSuffix: vodygfgm
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.contentColumnType: text
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.fieldGroup: 0759b0d2-7a69-4b31-9864-246df819554b
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.handle: seriesDetails
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.instructions: null
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.name: 'Series Details'
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.searchable: false
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.availableTransforms: ''
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.availableVolumes: ''
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.columnType: text
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.defaultTransform: null
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.initJs: null
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.purifierConfig: null
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.purifyHtml: false
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.removeEmptyTags: false
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.removeInlineStyles: false
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.removeNbsp: false
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.showUnpermittedFiles: false
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.settings.showUnpermittedVolumes: false
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.translationKeyFormat: null
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.translationMethod: none
+      fields.5a5369c0-b316-4832-9b47-6636a192a62a.type: craft\ckeditor\Field
+    message: 'Save field “seriesDetails”'
+  -
+    added:
+      meta.__names__.5a5369c0-b316-4832-9b47-6636a192a62a: 'Series Details'

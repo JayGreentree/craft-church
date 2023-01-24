@@ -1,0 +1,41 @@
+dateApplied: '2022-12-15 22:43:27'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1671172151
+        to: 1671173006
+  -
+    added:
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.columnSuffix: null
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.contentColumnType: string
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.fieldGroup: 5666f4aa-0bec-4734-9e00-6251055f9e13
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.handle: relatedPages
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.instructions: null
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.name: 'Related Pages'
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.searchable: false
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.allowSelfRelations: false
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.localizeRelations: false
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.maxRelations: null
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.minRelations: null
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.selectionCondition.__assoc__.0.0: elementType
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.selectionCondition.__assoc__.0.1: craft\elements\Entry
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.selectionCondition.__assoc__.1.0: fieldContext
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.selectionCondition.__assoc__.1.1: global
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.selectionCondition.__assoc__.2.0: class
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.selectionCondition.__assoc__.2.1: craft\elements\conditions\entries\EntryCondition
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.selectionLabel: null
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.showSiteMenu: false
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.source: null
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.sources: '*'
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.targetSiteId: null
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.validateRelatedElements: false
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.settings.viewMode: null
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.translationKeyFormat: null
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.translationMethod: site
+      fields.a716b0cb-5163-4bd7-9efc-836268bd2e03.type: craft\fields\Entries
+    message: 'Save field “relatedPages”'
+  -
+    added:
+      meta.__names__.a716b0cb-5163-4bd7-9efc-836268bd2e03: 'Related Pages'

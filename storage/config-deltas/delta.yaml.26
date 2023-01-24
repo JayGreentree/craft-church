@@ -1,0 +1,54 @@
+dateApplied: '2022-12-15 22:53:14'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1671173446
+        to: 1671173593
+  -
+    added:
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.columnSuffix: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.contentColumnType: string
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.fieldGroup: 65ee6975-465c-4135-a6e5-a45ce81a6535
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.handle: source
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.instructions: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.name: Source
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.searchable: false
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.allowSelfRelations: false
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.allowSubfolders: false
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.allowUploads: true
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.allowedKinds: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.defaultUploadLocationSource: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.defaultUploadLocationSubpath: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.localizeRelations: false
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.maxRelations: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.minRelations: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.previewMode: full
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.restrictFiles: false
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.restrictLocation: false
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.restrictedDefaultUploadSubpath: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.restrictedLocationSource: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.restrictedLocationSubpath: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.selectionCondition.__assoc__.0.0: elementType
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.selectionCondition.__assoc__.0.1: craft\elements\Asset
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.selectionCondition.__assoc__.1.0: fieldContext
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.selectionCondition.__assoc__.1.1: global
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.selectionCondition.__assoc__.2.0: class
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.selectionCondition.__assoc__.2.1: craft\elements\conditions\assets\AssetCondition
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.selectionLabel: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.showSiteMenu: false
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.showUnpermittedFiles: false
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.showUnpermittedVolumes: false
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.source: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.sources: '*'
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.targetSiteId: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.validateRelatedElements: false
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.settings.viewMode: list
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.translationKeyFormat: null
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.translationMethod: site
+      fields.8c41fa4f-2c56-4f83-884e-eae8bc6184d6.type: craft\fields\Assets
+    message: 'Save field “source”'
+  -
+    added:
+      meta.__names__.8c41fa4f-2c56-4f83-884e-eae8bc6184d6: Source

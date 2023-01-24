@@ -1,0 +1,32 @@
+dateApplied: '2022-12-15 22:22:45'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1671171725
+        to: 1671171764
+  -
+    added:
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.columnSuffix: xykrjxwg
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.contentColumnType: text
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.fieldGroup: cabf5db1-8ddc-4576-b387-39d4366462cd
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.handle: studyNotesLink
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.instructions: null
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.name: 'Study Notes Link'
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.searchable: false
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.byteLimit: null
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.charLimit: null
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.code: false
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.columnType: null
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.initialRows: 4
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.multiline: false
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.placeholder: null
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.settings.uiMode: normal
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.translationKeyFormat: null
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.translationMethod: none
+      fields.7dbfc199-6e96-41be-9abc-fd66f99c4dc5.type: craft\fields\PlainText
+    message: 'Save field “studyNotesLink”'
+  -
+    added:
+      meta.__names__.7dbfc199-6e96-41be-9abc-fd66f99c4dc5: 'Study Notes Link'
