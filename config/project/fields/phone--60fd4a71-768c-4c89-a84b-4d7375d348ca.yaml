@@ -1,0 +1,14 @@
+columnSuffix: msdxygim
+contentColumnType: string(255)
+fieldGroup: 08256173-ec40-44f7-9b32-51e2d7eca2ed # Locations
+handle: phone
+instructions: null
+name: Phone
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - tel
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

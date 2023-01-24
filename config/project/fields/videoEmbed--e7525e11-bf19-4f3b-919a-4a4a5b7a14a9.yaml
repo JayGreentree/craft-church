@@ -1,0 +1,19 @@
+columnSuffix: dabofaxl
+contentColumnType: text
+fieldGroup: cabf5db1-8ddc-4576-b387-39d4366462cd # Message
+handle: videoEmbed
+instructions: null
+name: 'Video Embed'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

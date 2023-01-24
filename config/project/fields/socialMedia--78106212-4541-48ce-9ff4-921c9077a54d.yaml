@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: ff054d40-85ad-46d0-abfb-eb1475066a31 # Common
+handle: socialMedia
+instructions: null
+name: 'Social Media'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_socialmedia}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

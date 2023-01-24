@@ -1,0 +1,19 @@
+columnSuffix: bcetjtmm
+contentColumnType: text
+fieldGroup: 1aee728c-d68f-485f-ab5f-e75e6781131a # Message
+handle: videoEmbed
+instructions: ''
+name: 'Video Embed'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: '1'
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: '<iframe width="560" height="315" src="https://www.youtube.com/embed/cAWsS5-jMH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

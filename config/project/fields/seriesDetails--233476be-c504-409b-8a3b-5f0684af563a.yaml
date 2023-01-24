@@ -1,0 +1,23 @@
+columnSuffix: qufpybua
+contentColumnType: text
+fieldGroup: dc0a66c8-bf3d-48f0-bf56-5a9a1003fe77 # Series
+handle: seriesDetails
+instructions: ''
+name: 'Series Details'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  defaultTransform: null
+  initJs: null
+  purifierConfig: null
+  purifyHtml: true
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

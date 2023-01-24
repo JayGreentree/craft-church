@@ -1,0 +1,19 @@
+columnSuffix: apwnmptc
+contentColumnType: text
+fieldGroup: 6e444fcf-fcd6-4dff-9de9-acf62e7bc560 # Staff
+handle: role
+instructions: null
+name: Role
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: true
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,14 @@
+columnSuffix: zwrqistl
+contentColumnType: boolean
+fieldGroup: dc0a66c8-bf3d-48f0-bf56-5a9a1003fe77 # Series
+handle: currentSeries
+instructions: ''
+name: 'Current Series?'
+searchable: false
+settings:
+  default: false
+  offLabel: 'No'
+  onLabel: 'Yes'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

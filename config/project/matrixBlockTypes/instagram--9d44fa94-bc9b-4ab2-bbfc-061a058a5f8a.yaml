@@ -1,0 +1,41 @@
+field: 78106212-4541-48ce-9ff4-921c9077a54d # Social Media
+fieldLayouts:
+  90723c0a-d6f6-4292-8865-1297009d4a7f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: dbee687d-b986-4d4c-a4fa-040f87134908 # Instagram
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b79b0142-e669-4af6-a941-02ed509d9285
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 828915eb-f48f-4c6d-8e3f-38c891adba98
+        userCondition: null
+fields:
+  dbee687d-b986-4d4c-a4fa-040f87134908: # Instagram
+    columnSuffix: ivdnaxbp
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: instagram
+    instructions: null
+    name: Instagram
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: instagram
+name: Instagram
+sortOrder: 3

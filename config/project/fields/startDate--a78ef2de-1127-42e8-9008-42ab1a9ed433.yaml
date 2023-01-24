@@ -1,0 +1,17 @@
+columnSuffix: ulckegzi
+contentColumnType: datetime
+fieldGroup: 0759b0d2-7a69-4b31-9864-246df819554b # Series
+handle: startDate
+instructions: null
+name: 'Start Date'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

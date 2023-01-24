@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: dc0a66c8-bf3d-48f0-bf56-5a9a1003fe77 # Series
+handle: relatedMessage
+instructions: ''
+name: 'Related Message'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:e40b6dc2-97cd-4cb3-9984-62fa7e8c6a00' # Message
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

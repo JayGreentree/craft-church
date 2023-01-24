@@ -1,0 +1,37 @@
+field: 7f3e0b6d-485a-46ab-95db-89be18c35195 # Social Media
+fieldLayouts:
+  06b7e851-c4ab-4120-8f00-d310b339146d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5ee9f8f1-428b-4f7a-b426-8caf875fb7fa # Instagram
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5ee9f8f1-428b-4f7a-b426-8caf875fb7fa: # Instagram
+    columnSuffix: asvpleam
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: instagram
+    instructions: ''
+    name: Instagram
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: instagram
+name: Instagram
+sortOrder: 3

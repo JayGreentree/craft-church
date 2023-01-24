@@ -1,0 +1,15 @@
+columnSuffix: mjscvriz
+contentColumnType: string(255)
+fieldGroup: f1dc4140-ccef-4e7b-ad58-af55566e9136 # Common
+handle: buttonUrl
+instructions: ''
+name: 'Button Url'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

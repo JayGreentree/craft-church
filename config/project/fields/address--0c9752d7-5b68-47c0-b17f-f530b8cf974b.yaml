@@ -1,0 +1,23 @@
+columnSuffix: bnvfywyo
+contentColumnType: text
+fieldGroup: 08256173-ec40-44f7-9b32-51e2d7eca2ed # Locations
+handle: address
+instructions: null
+name: Address
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  defaultTransform: null
+  initJs: null
+  purifierConfig: null
+  purifyHtml: false
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

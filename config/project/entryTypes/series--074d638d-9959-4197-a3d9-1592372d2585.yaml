@@ -1,0 +1,127 @@
+fieldLayouts:
+  0d7485f0-3ba4-4245-926f-6e395c6e5293:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: 'Series Title'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 511c1c9f-bdad-44d6-85e1-f03694f8b506
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 97396651-2a00-4b07-9a62-58bdf4756322 # Current Series?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 338750c5-d6cf-4b5a-9e1c-80fc574a71d1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 223e4229-d6e3-48f5-95a8-0aa777c37925 # Feature Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c4b0bb1e-2ab7-48d0-b1cc-2ea28128c081
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ab55b3e3-f708-409e-a744-7b1d07977c59 # Series Summary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d6f22bbf-0448-4a50-89b4-93e1225b0115
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a5369c0-b316-4832-9b47-6636a192a62a # Series Details
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1fd0e2df-a7bb-4c2d-817e-b76de9ae6409
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a78ef2de-1127-42e8-9008-42ab1a9ed433 # Start Date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 226dff95-dd48-4a66-b604-96725839556c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1a1f2bff-f2d7-4eaf-92d9-d7d5546148ba # End Date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0d111c39-6d06-4057-96e5-fc9da3188cf6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 69c1d49e-0092-4aff-acc8-209714843157 # Related Message
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0561234d-f7ac-4143-aff4-d4ac453262e3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: af54adb2-70bb-444a-b0df-62b18ca7d3e8
+        userCondition: null
+handle: series
+hasTitleField: true
+name: Series
+section: 30163cc6-06d8-4e24-8564-a7654b21737f # Series
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

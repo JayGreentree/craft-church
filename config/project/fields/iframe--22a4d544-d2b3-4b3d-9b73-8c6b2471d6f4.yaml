@@ -1,0 +1,19 @@
+columnSuffix: kehumfjw
+contentColumnType: text
+fieldGroup: b3930f0a-8d5d-4d59-9b08-8ec4a4b36881 # Forms
+handle: iframe
+instructions: ''
+name: iframe
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: '1'
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

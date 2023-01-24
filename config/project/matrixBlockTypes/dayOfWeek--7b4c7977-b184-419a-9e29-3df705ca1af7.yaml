@@ -1,0 +1,41 @@
+field: bcd40e3f-1970-4a84-9e8f-31459b580ffd # Service Times
+fieldLayouts:
+  02a7b55d-839e-484c-b34f-1e3e8db7cfa5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 92b63721-7bbf-4a5b-8b21-3ada7b4ba6da # Day of Week
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  92b63721-7bbf-4a5b-8b21-3ada7b4ba6da: # Day of Week
+    columnSuffix: rvnwetty
+    contentColumnType: text
+    fieldGroup: null
+    handle: dayOfWeek
+    instructions: ''
+    name: 'Day of Week'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: dayOfWeek
+name: 'Day of Week'
+sortOrder: 1

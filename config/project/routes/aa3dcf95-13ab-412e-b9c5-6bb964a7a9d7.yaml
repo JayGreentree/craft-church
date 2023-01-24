@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 2
+template: groups/index
+uriParts:
+  - small-groups
+uriPattern: small-groups

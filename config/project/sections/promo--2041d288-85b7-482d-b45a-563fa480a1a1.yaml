@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: promo
+name: Promo
+propagationMethod: all
+siteSettings:
+  9a595275-36b0-484a-b00f-9b3b8a2c12e8: # Generic Church
+    enabledByDefault: true
+    hasUrls: true
+    template: promo/_entry
+    uriFormat: 'promo/{slug}'
+type: channel

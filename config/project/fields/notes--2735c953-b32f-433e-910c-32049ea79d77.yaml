@@ -1,0 +1,23 @@
+columnSuffix: lknjzhfe
+contentColumnType: text
+fieldGroup: 0ffd4335-7c66-40a2-8341-cd2cb2c1740d # live
+handle: notes
+instructions: ''
+name: Notes
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  defaultTransform: ''
+  initJs: null
+  purifierConfig: ''
+  purifyHtml: ''
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showUnpermittedFiles: ''
+  showUnpermittedVolumes: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

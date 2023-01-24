@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: series
+name: Series
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  86f3393d-e7ea-4fee-ac65-fd354c7a22b3: # Craft Church Demo
+    enabledByDefault: true
+    hasUrls: true
+    template: series/_entry
+    uriFormat: 'series/{slug}'
+type: channel

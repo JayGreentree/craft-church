@@ -1,0 +1,15 @@
+columnSuffix: pyfmwork
+contentColumnType: string(255)
+fieldGroup: ff054d40-85ad-46d0-abfb-eb1475066a31 # Common
+handle: buttonUrl
+instructions: null
+name: 'Button Url'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+    - email
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

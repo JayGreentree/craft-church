@@ -1,0 +1,14 @@
+columnSuffix: oqrwagdw
+contentColumnType: string(255)
+fieldGroup: cabf5db1-8ddc-4576-b387-39d4366462cd # Message
+handle: audoLink
+instructions: null
+name: 'Audo Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

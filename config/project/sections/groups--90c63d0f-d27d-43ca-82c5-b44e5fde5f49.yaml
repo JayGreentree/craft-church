@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: groups
+name: 'Small Groups'
+propagationMethod: all
+siteSettings:
+  9a595275-36b0-484a-b00f-9b3b8a2c12e8: # Generic Church
+    enabledByDefault: true
+    hasUrls: true
+    template: groups/_entry
+    uriFormat: 'small-groups/{slug}'
+type: channel

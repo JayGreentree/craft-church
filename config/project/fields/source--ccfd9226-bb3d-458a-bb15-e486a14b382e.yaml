@@ -1,0 +1,33 @@
+columnSuffix: rkkpxfmh
+contentColumnType: string
+fieldGroup: 776ccb4a-3f14-4b2c-be86-82f7a20d4e77 # Promo
+handle: source
+instructions: ''
+name: Source
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:057fa019-28b3-47a7-9fd1-400aeb20859b' # NR Card
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:f796ff81-c977-47c7-8be5-cf669310bb22' # Video
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:f796ff81-c977-47c7-8be5-cf669310bb22' # Video
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets
