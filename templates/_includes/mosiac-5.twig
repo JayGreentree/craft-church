@@ -11,6 +11,9 @@
 			</a>
 		{% endfor %}
 	</div>
+	
+	{# New Row Here #}
+	
 	<div class="nr_mosiac_flex-tile--vertical">
 		{% for entry in craft.entries.section('events').orderby('id').limit('2') %}
 			{% set image = entry.featureImage.one() %}
